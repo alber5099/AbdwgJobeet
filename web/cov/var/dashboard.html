@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for D:\Workspaces\PhpStorm\jobeet/var</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/nv.d3.css" rel="stylesheet">
+  <link href="../css/style.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+  <script src="../js/html5shiv.js"></script>
+  <script src="../js/respond.min.js"></script>
+  <![endif]-->
+ </head>
+ <body>
+  <header>
+   <div class="container">
+    <div class="row">
+     <div class="col-md-12">
+      <ol class="breadcrumb">
+        <li><a href="../index.html">D:\Workspaces\PhpStorm\jobeet</a></li>
+        <li><a href="var.html">var</a></li>
+        <li class="active">(Dashboard)</li>
+
+      </ol>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th><div align="left">Class</div></th>
+         <th><div align="right">Coverage</div></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="var/bootstrap.php.cache.html#1732">ResponseHeaderBag</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2648">ApcClassLoader</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2895">HttpKernel</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#345">ServerBag</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#275">FileBag</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#3041">ContainerAwareHttpKernel</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#121">HeaderBag</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1191">Response</a></td><td><div align="right">1%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#393">Request</a></td><td><div align="right">2%</div></td></tr>
+       <tr><td><a href="var/cache/test/doctrine/orm/Proxies/__CG__AbdwgJobeetBundleEntityCategory.php.html#8">Category</a></td><td><div align="right">4%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1928">Container</a></td><td><div align="right">16%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#8">ParameterBag</a></td><td><div align="right">20%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2727">Bundle</a></td><td><div align="right">21%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2226">Kernel</a></td><td><div align="right">34%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2821">ConfigCache</a></td><td><div align="right">48%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#17">appTestDebugProjectContainer</a></td><td><div align="right">66%</div></td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th><div align="left">Class</div></th>
+         <th><div align="right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></div></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="var/bootstrap.php.cache.html#393">Request</a></td><td><div align="right">49622</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1191">Response</a></td><td><div align="right">19655</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2226">Kernel</a></td><td><div align="right">3542</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1928">Container</a></td><td><div align="right">2894</div></td></tr>
+       <tr><td><a href="var/cache/test/doctrine/orm/Proxies/__CG__AbdwgJobeetBundleEntityCategory.php.html#8">Category</a></td><td><div align="right">2794</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#17">appTestDebugProjectContainer</a></td><td><div align="right">2143</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1732">ResponseHeaderBag</a></td><td><div align="right">2070</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#121">HeaderBag</a></td><td><div align="right">1980</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2895">HttpKernel</a></td><td><div align="right">1122</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#8">ParameterBag</a></td><td><div align="right">590</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#275">FileBag</a></td><td><div align="right">380</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2727">Bundle</a></td><td><div align="right">299</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#345">ServerBag</a></td><td><div align="right">240</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2648">ApcClassLoader</a></td><td><div align="right">110</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2821">ConfigCache</a></td><td><div align="right">40</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#3041">ContainerAwareHttpKernel</a></td><td><div align="right">20</div></td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th><div align="left">Method</div></th>
+         <th><div align="right">Coverage</div></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#1381">appTestDebugProjectContainer::getFragment_Renderer_EsiService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#1398">appTestDebugProjectContainer::getFragment_Renderer_HincludeService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#1368">appTestDebugProjectContainer::getFragment_ListenerService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#1349">appTestDebugProjectContainer::getFragment_HandlerService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#1323">appTestDebugProjectContainer::getForm_TypeGuesser_DoctrineService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#1336">appTestDebugProjectContainer::getForm_TypeGuesser_ValidatorService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#1415">appTestDebugProjectContainer::getFragment_Renderer_InlineService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#1432">appTestDebugProjectContainer::getHttpKernelService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#1567">appTestDebugProjectContainer::getMonolog_Logger_EmergencyService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#1586">appTestDebugProjectContainer::getMonolog_Logger_EventService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#1529">appTestDebugProjectContainer::getMonolog_Logger_DeprecationService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#1471">appTestDebugProjectContainer::getLoggerService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#1445">appTestDebugProjectContainer::getKernelService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#1458">appTestDebugProjectContainer::getLocaleListenerService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#1310">appTestDebugProjectContainer::getForm_TypeExtension_Submit_ValidatorService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#1297">appTestDebugProjectContainer::getForm_TypeExtension_Repeated_ValidatorService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#1180">appTestDebugProjectContainer::getForm_Type_TextService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#1193">appTestDebugProjectContainer::getForm_Type_TextareaService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#1167">appTestDebugProjectContainer::getForm_Type_SubmitService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#1154">appTestDebugProjectContainer::getForm_Type_SearchService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#1128">appTestDebugProjectContainer::getForm_Type_RepeatedService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#1141">appTestDebugProjectContainer::getForm_Type_ResetService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#1206">appTestDebugProjectContainer::getForm_Type_TimeService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#1219">appTestDebugProjectContainer::getForm_Type_TimezoneService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#1271">appTestDebugProjectContainer::getForm_TypeExtension_Form_HttpFoundationService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#1284">appTestDebugProjectContainer::getForm_TypeExtension_Form_ValidatorService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#1258">appTestDebugProjectContainer::getForm_TypeExtension_Form_DataCollectorService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#1245">appTestDebugProjectContainer::getForm_TypeExtension_CsrfService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#1232">appTestDebugProjectContainer::getForm_Type_UrlService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#1605">appTestDebugProjectContainer::getMonolog_Logger_ProfilerService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#1624">appTestDebugProjectContainer::getMonolog_Logger_RequestService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#1966">appTestDebugProjectContainer::getSecurity_Rememberme_ResponseListenerService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#1979">appTestDebugProjectContainer::getSecurity_SecureRandomService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#1953">appTestDebugProjectContainer::getSecurity_Firewall_Map_Context_DevService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#1934">appTestDebugProjectContainer::getSecurity_Firewall_Map_Context_DefaultService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#1908">appTestDebugProjectContainer::getSecurity_EncoderFactoryService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#1921">appTestDebugProjectContainer::getSecurity_FirewallService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#1992">appTestDebugProjectContainer::getSecurity_Validator_UserPasswordService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2018">appTestDebugProjectContainer::getSensioFrameworkExtra_Cache_ListenerService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2070">appTestDebugProjectContainer::getSensioFrameworkExtra_Converter_ListenerService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2083">appTestDebugProjectContainer::getSensioFrameworkExtra_Converter_ManagerService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2057">appTestDebugProjectContainer::getSensioFrameworkExtra_Converter_Doctrine_OrmService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2044">appTestDebugProjectContainer::getSensioFrameworkExtra_Converter_DatetimeService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2031">appTestDebugProjectContainer::getSensioFrameworkExtra_Controller_ListenerService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#1895">appTestDebugProjectContainer::getSecurity_Csrf_TokenManagerService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#1882">appTestDebugProjectContainer::getSecurity_ContextService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#1719">appTestDebugProjectContainer::getProfilerService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#1759">appTestDebugProjectContainer::getProfilerListenerService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#1700">appTestDebugProjectContainer::getMonolog_Logger_TemplatingService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#1681">appTestDebugProjectContainer::getMonolog_Logger_SecurityService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#1643">appTestDebugProjectContainer::getMonolog_Logger_RouterService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#1662">appTestDebugProjectContainer::getMonolog_Logger_ScreamService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#1772">appTestDebugProjectContainer::getPropertyAccessorService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#1786">appTestDebugProjectContainer::getRequestService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#1842">appTestDebugProjectContainer::getRouterListenerService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#1855">appTestDebugProjectContainer::getRouting_LoaderService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#1829">appTestDebugProjectContainer::getRouterService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#1816">appTestDebugProjectContainer::getResponseListenerService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#1803">appTestDebugProjectContainer::getRequestStackService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#1115">appTestDebugProjectContainer::getForm_Type_RadioService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#1102">appTestDebugProjectContainer::getForm_Type_PercentService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#432">appTestDebugProjectContainer::getD24bb096000420235828387673021f07270b16c77a034f1b862d14bdc87de0ed3Service</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#445">appTestDebugProjectContainer::getDataCollector_FormService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#419">appTestDebugProjectContainer::getD24bb096000420235828387673021f07270b16c77a034f1b862d14bdc87de0ed2Service</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#406">appTestDebugProjectContainer::getD24bb096000420235828387673021f07270b16c77a034f1b862d14bdc87de0ed1Service</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#375">appTestDebugProjectContainer::getCacheClearerService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#388">appTestDebugProjectContainer::getCacheWarmerService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#458">appTestDebugProjectContainer::getDataCollector_Form_ExtractorService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#471">appTestDebugProjectContainer::getDataCollector_RequestService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#536">appTestDebugProjectContainer::getDebug_EmergencyLoggerListenerService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#549">appTestDebugProjectContainer::getDebug_EventDispatcherService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#523">appTestDebugProjectContainer::getDebug_DeprecationLoggerListenerService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#510">appTestDebugProjectContainer::getDebug_DebugHandlersListenerService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#484">appTestDebugProjectContainer::getDataCollector_RouterService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#497">appTestDebugProjectContainer::getDebug_ControllerResolverService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#362">appTestDebugProjectContainer::getAssetic_RequestListenerService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#349">appTestDebugProjectContainer::getAssetic_FilterManagerService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2976">HttpKernel::handleException</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#3003">HttpKernel::varToString</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2971">HttpKernel::finishRequest</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2964">HttpKernel::filterResponse</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2922">HttpKernel::terminateWithException</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2932">HttpKernel::handleRaw</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#3044">ContainerAwareHttpKernel::__construct</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#3052">ContainerAwareHttpKernel::handle</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#317">appTestDebugProjectContainer::getAssetic_ControllerService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#336">appTestDebugProjectContainer::getAssetic_Filter_CssrewriteService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#303">appTestDebugProjectContainer::getAssetic_AssetManagerService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#290">appTestDebugProjectContainer::getAnnotationReaderService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#277">appTestDebugProjectContainer::getAab3a0644ac30d4bc071def84a67c604a59f1c8ac746db9141c8095759bf2ab81Service</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#590">appTestDebugProjectContainer::getDebug_ScreamLoggerListenerService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#616">appTestDebugProjectContainer::getDebug_Templating_Engine_PhpService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#985">appTestDebugProjectContainer::getForm_Type_FileService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#998">appTestDebugProjectContainer::getForm_Type_FormService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#972">appTestDebugProjectContainer::getForm_Type_EntityService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#959">appTestDebugProjectContainer::getForm_Type_EmailService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#933">appTestDebugProjectContainer::getForm_Type_DateService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#946">appTestDebugProjectContainer::getForm_Type_DatetimeService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#1011">appTestDebugProjectContainer::getForm_Type_HiddenService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#1024">appTestDebugProjectContainer::getForm_Type_IntegerService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#1076">appTestDebugProjectContainer::getForm_Type_NumberService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#1089">appTestDebugProjectContainer::getForm_Type_PasswordService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#1063">appTestDebugProjectContainer::getForm_Type_MoneyService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#1050">appTestDebugProjectContainer::getForm_Type_LocaleService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#1037">appTestDebugProjectContainer::getForm_Type_LanguageService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#920">appTestDebugProjectContainer::getForm_Type_CurrencyService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#907">appTestDebugProjectContainer::getForm_Type_CountryService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#790">appTestDebugProjectContainer::getForm_CsrfProviderService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#803">appTestDebugProjectContainer::getForm_FactoryService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#777">appTestDebugProjectContainer::getFilesystemService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#764">appTestDebugProjectContainer::getFileLocatorService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#738">appTestDebugProjectContainer::getDoctrine_Orm_Validator_UniqueService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#751">appTestDebugProjectContainer::getDoctrine_Orm_ValidatorInitializerService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#816">appTestDebugProjectContainer::getForm_RegistryService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#829">appTestDebugProjectContainer::getForm_ResolvedTypeFactoryService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#881">appTestDebugProjectContainer::getForm_Type_ChoiceService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#894">appTestDebugProjectContainer::getForm_Type_CollectionService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#868">appTestDebugProjectContainer::getForm_Type_CheckboxService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#855">appTestDebugProjectContainer::getForm_Type_ButtonService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#842">appTestDebugProjectContainer::getForm_Type_BirthdayService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2101">appTestDebugProjectContainer::getSensioFrameworkExtra_Security_ListenerService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2114">appTestDebugProjectContainer::getSensioFrameworkExtra_View_GuesserService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#3291">appTestDebugProjectContainer::getRouter_RequestContextService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#3308">appTestDebugProjectContainer::getSecurity_Access_DecisionManagerService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#3257">appTestDebugProjectContainer::getControllerNameConverterService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#3240">appTestDebugProjectContainer::getAssetic_ValueSupplier_DefaultService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#3202">appTestDebugProjectContainer::getAssetic_AssetFactoryService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#3223">appTestDebugProjectContainer::getAssetic_CacheService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#3328">appTestDebugProjectContainer::getSecurity_Authentication_ManagerService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#3349">appTestDebugProjectContainer::getSecurity_Authentication_TrustResolverService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#3434">appTestDebugProjectContainer::getTranslator_SelectorService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#3466">appTestDebugProjectContainer::setParameter</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#3417">appTestDebugProjectContainer::getTemplating_LocatorService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#3400">appTestDebugProjectContainer::getSwiftmailer_Mailer_Default_Transport_EventdispatcherService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#3366">appTestDebugProjectContainer::getSecurity_RoleHierarchyService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#3383">appTestDebugProjectContainer::getSession_Storage_MetadataBagService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#3185">appTestDebugProjectContainer::getWebProfiler_Controller_RouterService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#3172">appTestDebugProjectContainer::getWebProfiler_Controller_ProfilerService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#3032">appTestDebugProjectContainer::getTwig_ExceptionListenerService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#3045">appTestDebugProjectContainer::getTwig_LoaderService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#3019">appTestDebugProjectContainer::getTwig_Controller_ExceptionService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2986">appTestDebugProjectContainer::getTwigService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2960">appTestDebugProjectContainer::getTranslatorService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2973">appTestDebugProjectContainer::getTranslator_DefaultService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#3071">appTestDebugProjectContainer::getTwig_Translation_ExtractorService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#3084">appTestDebugProjectContainer::getUriSignerService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#3146">appTestDebugProjectContainer::getValidator_ExpressionService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#3159">appTestDebugProjectContainer::getWebProfiler_Controller_ExceptionService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#3133">appTestDebugProjectContainer::getValidator_EmailService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#3110">appTestDebugProjectContainer::getValidator_BuilderService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#3097">appTestDebugProjectContainer::getValidatorService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#3474">appTestDebugProjectContainer::getParameterBag</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/doctrine/orm/Proxies/__CG__AbdwgJobeetBundleEntityCategory.php.html#64">Category::__sleep</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/doctrine/orm/Proxies/__CG__AbdwgJobeetBundleEntityCategory.php.html#271">Category::getAffiliates</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/doctrine/orm/Proxies/__CG__AbdwgJobeetBundleEntityCategory.php.html#282">Category::__toString</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/doctrine/orm/Proxies/__CG__AbdwgJobeetBundleEntityCategory.php.html#260">Category::removeAffiliate</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/doctrine/orm/Proxies/__CG__AbdwgJobeetBundleEntityCategory.php.html#249">Category::addAffiliate</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/doctrine/orm/Proxies/__CG__AbdwgJobeetBundleEntityCategory.php.html#227">Category::removeJob</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/doctrine/orm/Proxies/__CG__AbdwgJobeetBundleEntityCategory.php.html#238">Category::getJobs</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/doctrine/orm/Proxies/__CG__AbdwgJobeetBundleEntityCategory.php.html#293">Category::setActiveJobs</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/doctrine/orm/Proxies/__CG__AbdwgJobeetBundleEntityCategory.php.html#304">Category::getActiveJobs</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/doctrine/orm/Proxies/__CG__AbdwgJobeetBundleEntityCategory.php.html#348">Category::setSlug</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/doctrine/orm/Proxies/__CG__AbdwgJobeetBundleEntityCategory.php.html#359">Category::setSlugValue</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/doctrine/orm/Proxies/__CG__AbdwgJobeetBundleEntityCategory.php.html#337">Category::getMoreJobs</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/doctrine/orm/Proxies/__CG__AbdwgJobeetBundleEntityCategory.php.html#326">Category::setMoreJobs</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/doctrine/orm/Proxies/__CG__AbdwgJobeetBundleEntityCategory.php.html#315">Category::getSlug</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/doctrine/orm/Proxies/__CG__AbdwgJobeetBundleEntityCategory.php.html#216">Category::addJob</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/doctrine/orm/Proxies/__CG__AbdwgJobeetBundleEntityCategory.php.html#205">Category::getName</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/doctrine/orm/Proxies/__CG__AbdwgJobeetBundleEntityCategory.php.html#115">Category::__isInitialized</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/doctrine/orm/Proxies/__CG__AbdwgJobeetBundleEntityCategory.php.html#124">Category::__setInitialized</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/doctrine/orm/Proxies/__CG__AbdwgJobeetBundleEntityCategory.php.html#106">Category::__load</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/doctrine/orm/Proxies/__CG__AbdwgJobeetBundleEntityCategory.php.html#98">Category::__clone</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/doctrine/orm/Proxies/__CG__AbdwgJobeetBundleEntityCategory.php.html#76">Category::__wakeup</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/doctrine/orm/Proxies/__CG__AbdwgJobeetBundleEntityCategory.php.html#79">Category::anonymous function</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/doctrine/orm/Proxies/__CG__AbdwgJobeetBundleEntityCategory.php.html#133">Category::__setInitializer</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/doctrine/orm/Proxies/__CG__AbdwgJobeetBundleEntityCategory.php.html#142">Category::__getInitializer</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/doctrine/orm/Proxies/__CG__AbdwgJobeetBundleEntityCategory.php.html#179">Category::getId</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/doctrine/orm/Proxies/__CG__AbdwgJobeetBundleEntityCategory.php.html#194">Category::setName</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/doctrine/orm/Proxies/__CG__AbdwgJobeetBundleEntityCategory.php.html#170">Category::__getLazyProperties</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/doctrine/orm/Proxies/__CG__AbdwgJobeetBundleEntityCategory.php.html#160">Category::__getCloner</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/doctrine/orm/Proxies/__CG__AbdwgJobeetBundleEntityCategory.php.html#151">Category::__setCloner</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2934">appTestDebugProjectContainer::getTranslation_WriterService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2921">appTestDebugProjectContainer::getTranslation_Loader_YmlService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2384">appTestDebugProjectContainer::getTemplating_Helper_AssetsService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2401">appTestDebugProjectContainer::getTemplating_Helper_CodeService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2369">appTestDebugProjectContainer::getTemplating_Helper_ActionsService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2356">appTestDebugProjectContainer::getTemplating_GlobalsService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2330">appTestDebugProjectContainer::getTemplating_Asset_PackageFactoryService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2343">appTestDebugProjectContainer::getTemplating_FilenameParserService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2414">appTestDebugProjectContainer::getTemplating_Helper_FormService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2427">appTestDebugProjectContainer::getTemplating_Helper_LogoutUrlService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2479">appTestDebugProjectContainer::getTemplating_Helper_SessionService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2492">appTestDebugProjectContainer::getTemplating_Helper_SlotsService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2466">appTestDebugProjectContainer::getTemplating_Helper_SecurityService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2453">appTestDebugProjectContainer::getTemplating_Helper_RouterService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2440">appTestDebugProjectContainer::getTemplating_Helper_RequestService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2313">appTestDebugProjectContainer::getTemplatingService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2300">appTestDebugProjectContainer::getSwiftmailer_Mailer_Default_Transport_RealService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2179">appTestDebugProjectContainer::getSession_Storage_NativeService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2192">appTestDebugProjectContainer::getSession_Storage_PhpBridgeService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2166">appTestDebugProjectContainer::getSession_Storage_FilesystemService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2153">appTestDebugProjectContainer::getSessionService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2127">appTestDebugProjectContainer::getSensioFrameworkExtra_View_ListenerService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2140">appTestDebugProjectContainer::getServiceContainerService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2205">appTestDebugProjectContainer::getSessionListenerService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2218">appTestDebugProjectContainer::getStreamedResponseListenerService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2270">appTestDebugProjectContainer::getSwiftmailer_Mailer_Default_SpoolService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2283">appTestDebugProjectContainer::getSwiftmailer_Mailer_Default_TransportService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2257">appTestDebugProjectContainer::getSwiftmailer_Mailer_Default_Plugin_MessageloggerService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2244">appTestDebugProjectContainer::getSwiftmailer_Mailer_DefaultService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2231">appTestDebugProjectContainer::getSwiftmailer_EmailSender_ListenerService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2505">appTestDebugProjectContainer::getTemplating_Helper_StopwatchService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2518">appTestDebugProjectContainer::getTemplating_Helper_TranslatorService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2804">appTestDebugProjectContainer::getTranslation_Loader_DatService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2817">appTestDebugProjectContainer::getTranslation_Loader_IniService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2791">appTestDebugProjectContainer::getTranslation_Loader_CsvService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2761">appTestDebugProjectContainer::getTranslation_LoaderService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2730">appTestDebugProjectContainer::getTranslation_ExtractorService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2748">appTestDebugProjectContainer::getTranslation_Extractor_PhpService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2830">appTestDebugProjectContainer::getTranslation_Loader_JsonService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2843">appTestDebugProjectContainer::getTranslation_Loader_MoService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2895">appTestDebugProjectContainer::getTranslation_Loader_ResService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2908">appTestDebugProjectContainer::getTranslation_Loader_XliffService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2882">appTestDebugProjectContainer::getTranslation_Loader_QtService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2869">appTestDebugProjectContainer::getTranslation_Loader_PoService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2856">appTestDebugProjectContainer::getTranslation_Loader_PhpService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2717">appTestDebugProjectContainer::getTranslation_Dumper_YmlService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2704">appTestDebugProjectContainer::getTranslation_Dumper_XliffService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2587">appTestDebugProjectContainer::getTest_Session_ListenerService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2600">appTestDebugProjectContainer::getTranslation_Dumper_CsvService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2574">appTestDebugProjectContainer::getTest_Client_HistoryService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2564">appTestDebugProjectContainer::getTest_Client_CookiejarService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2531">appTestDebugProjectContainer::getTemplating_LoaderService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2544">appTestDebugProjectContainer::getTemplating_NameParserService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2613">appTestDebugProjectContainer::getTranslation_Dumper_IniService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2626">appTestDebugProjectContainer::getTranslation_Dumper_JsonService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2678">appTestDebugProjectContainer::getTranslation_Dumper_QtService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2691">appTestDebugProjectContainer::getTranslation_Dumper_ResService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2665">appTestDebugProjectContainer::getTranslation_Dumper_PoService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2652">appTestDebugProjectContainer::getTranslation_Dumper_PhpService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2639">appTestDebugProjectContainer::getTranslation_Dumper_MoService</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2918">HttpKernel::terminate</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2906">HttpKernel::handle</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#908">Request::getRequestFormat</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#915">Request::setRequestFormat</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#901">Request::setFormat</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#887">Request::getFormat</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#876">Request::getRealMethod</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#880">Request::getMimeType</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#919">Request::getContentType</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#923">Request::setDefaultLocale</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#942">Request::isMethodSafe</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#946">Request::getContent</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#938">Request::isMethod</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#934">Request::getLocale</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#930">Request::setLocale</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#862">Request::getMethod</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#857">Request::setMethod</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#777">Request::getUserInfo</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#786">Request::getHttpHost</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#773">Request::getPassword</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#769">Request::getUser</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#747">Request::getScheme</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#751">Request::getPort</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#795">Request::getRequestUri</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#802">Request::getSchemeAndHttpHost</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#822">Request::isSecure</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#829">Request::getHost</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#817">Request::getQueryString</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#813">Request::getUriForPath</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#806">Request::getUri</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#960">Request::getETags</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#964">Request::isNoCache</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1309">Response::prepare</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1347">Response::sendHeaders</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1305">Response::__clone</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1298">Response::__toString</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1284">Response::__construct</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1294">Response::create</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1363">Response::sendContent</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1368">Response::send</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1401">Response::setStatusCode</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1418">Response::getStatusCode</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1392">Response::setProtocolVersion</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1388">Response::getContent</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1380">Response::setContent</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1176">Request::createRequestFromFactory</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1165">Request::getUrlencodedPrefix</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1025">Request::getEncodings</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1032">Request::getAcceptableContentTypes</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1018">Request::getCharsets</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#990">Request::getLanguages</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#968">Request::getPreferredLanguage</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1039">Request::isXmlHttpRequest</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1043">Request::prepareRequestUri</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1151">Request::initializeFormats</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1156">Request::setPhpDefaultLocale</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1134">Request::preparePathInfo</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1117">Request::prepareBasePath</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1075">Request::prepareBaseUrl</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#740">Request::getBaseUrl</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#733">Request::getBasePath</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#193">HeaderBag::has</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#197">HeaderBag::contains</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#180">HeaderBag::set</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#166">HeaderBag::get</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#155">HeaderBag::replace</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#160">HeaderBag::add</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#201">HeaderBag::remove</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#209">HeaderBag::getDate</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#232">HeaderBag::removeCacheControlDirective</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#237">HeaderBag::getIterator</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#228">HeaderBag::getCacheControlDirective</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#224">HeaderBag::hasCacheControlDirective</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#219">HeaderBag::addCacheControlDirective</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#151">HeaderBag::keys</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#147">HeaderBag::all</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#82">ParameterBag::getAlpha</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#86">ParameterBag::getAlnum</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#78">ParameterBag::remove</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#74">ParameterBag::has</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#31">ParameterBag::get</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#70">ParameterBag::set</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#90">ParameterBag::getDigits</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#94">ParameterBag::getInt</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#125">HeaderBag::__construct</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#131">HeaderBag::__toString</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#113">ParameterBag::count</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#109">ParameterBag::getIterator</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#98">ParameterBag::filter</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#241">HeaderBag::count</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#245">HeaderBag::getCacheControlHeader</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#627">Request::anonymous function</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#632">Request::getTrustedHosts</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#621">Request::getTrustedProxies</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#617">Request::setTrustedProxies</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#578">Request::__clone</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#588">Request::__toString</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#636">Request::setTrustedHeaderName</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#674">Request::getHttpMethodParameterOverride</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#717">Request::getClientIp</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#722">Request::getScriptName</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#686">Request::hasPreviousSession</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#682">Request::getSession</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#678">Request::get</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#538">Request::duplicate</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#534">Request::setFactory</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#287">FileBag::set</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#294">FileBag::add</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#282">FileBag::replace</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#278">FileBag::__construct</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#261">HeaderBag::parseCacheControl</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#300">FileBag::convertFileInformation</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#321">FileBag::fixPhpFilesArray</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#457">Request::createFromGlobals</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#468">Request::create</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#436">Request::initialize</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#432">Request::__construct</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#347">ServerBag::getHeaders</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1422">Response::setCharset</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1397">Response::getProtocolVersion</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2143">Container::isScopeActive</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2147">Container::camelize</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2139">Container::hasScope</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2119">Container::addScope</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2094">Container::leaveScope</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2151">Container::underscore</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2258">Kernel::__clone</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2318">Kernel::isClassInActiveBundle</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2409">Kernel::loadClassCache</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2310">Kernel::getHttpKernel</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2303">Kernel::handle</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2282">Kernel::terminate</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2068">Container::enterScope</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2057">Container::getServiceIds</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1944">Container::compile</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1949">Container::isFrozen</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1939">Container::__construct</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1860">ResponseHeaderBag::computeCacheControlValue</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1837">ResponseHeaderBag::makeDisposition</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1953">Container::getParameterBag</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1427">Response::getCharset</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2052">Container::initialized</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1992">Container::has</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1965">Container::setParameter</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1961">Container::hasParameter</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2413">Kernel::setClassCache</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2417">Kernel::getStartTime</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2671">ApcClassLoader::loadClass</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2678">ApcClassLoader::findFile</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2667">ApcClassLoader::unregister</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2663">ApcClassLoader::register</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2652">ApcClassLoader::__construct</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2685">ApcClassLoader::__call</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2738">Bundle::build</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2855">ConfigCache::write</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2900">HttpKernel::__construct</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2788">Bundle::registerCommands</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2763">Bundle::getNamespace</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2741">Bundle::getContainerExtension</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2639">Kernel::unserialize</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2635">Kernel::serialize</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2485">Kernel::getContainerBaseClass</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2507">Kernel::getKernelParameters</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2433">Kernel::doLoadClassCache</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2429">Kernel::getCharset</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2425">Kernel::getLogDir</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2519">Kernel::getEnvParameters</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2529">Kernel::buildContainer</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2598">Kernel::stripComments</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2586">Kernel::getContainerLoader</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2574">Kernel::dumpContainer</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2566">Kernel::getContainerBuilder</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1833">ResponseHeaderBag::clearCookie</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1957">Container::getParameter</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1578">Response::setCache</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1611">Response::setNotModified</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1566">Response::setEtag</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1562">Response::getEtag</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1542">Response::setClientTtl</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1551">Response::setLastModified</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1620">Response::hasVary</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1624">Response::getVary</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1661">Response::isInformational</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1665">Response::isSuccessful</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1657">Response::isInvalid</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1815">ResponseHeaderBag::getCookies</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1635">Response::setVary</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1537">Response::setTtl</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1531">Response::getTtl</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1449">Response::setPrivate</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1455">Response::setPublic</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1445">Response::isValidateable</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1441">Response::isFresh</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1431">Response::isCacheable</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1461">Response::mustRevalidate</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1465">Response::getDate</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1520">Response::setMaxAge</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1525">Response::setSharedMaxAge</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1482">Response::expire</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1475">Response::getAge</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1469">Response::setDate</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1669">Response::isRedirection</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1640">Response::isNotModified</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1757">ResponseHeaderBag::allPreserveCase</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1761">ResponseHeaderBag::replace</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1748">ResponseHeaderBag::__toString</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1673">Response::isClientError</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1720">Response::ensureIEOverSSLCompatibility</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1769">ResponseHeaderBag::set</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1781">ResponseHeaderBag::remove</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1802">ResponseHeaderBag::removeCookie</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1798">ResponseHeaderBag::setCookie</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1794">ResponseHeaderBag::getCacheControlDirective</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1790">ResponseHeaderBag::hasCacheControlDirective</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1701">Response::closeOutputBuffers</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1741">ResponseHeaderBag::__construct</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1693">Response::isRedirect</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1689">Response::isNotFound</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1685">Response::isForbidden</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1681">Response::isOk</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1677">Response::isServerError</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1697">Response::isEmpty</a></td><td><div align="right">0%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#595">Request::overrideGlobals</a></td><td><div align="right">5%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2549">Kernel::prepareContainer</a></td><td><div align="right">6%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1497">Response::setExpires</a></td><td><div align="right">12%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1508">Response::getMaxAge</a></td><td><div align="right">12%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#698">Request::getClientIps</a></td><td><div align="right">14%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#726">Request::getPathInfo</a></td><td><div align="right">20%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#650">Request::normalizeQueryString</a></td><td><div align="right">25%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#643">Request::getTrustedHeaderName</a></td><td><div align="right">25%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1489">Response::getExpires</a></td><td><div align="right">33%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1969">Container::set</a></td><td><div align="right">42%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2001">Container::get</a></td><td><div align="right">42%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2337">Kernel::locateResource</a></td><td><div align="right">47%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#19">ParameterBag::keys</a></td><td><div align="right">50%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1547">Response::getLastModified</a></td><td><div align="right">50%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#690">Request::hasSession</a></td><td><div align="right">50%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#694">Request::setSession</a></td><td><div align="right">50%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2489">Kernel::initializeContainer</a></td><td><div align="right">56%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2327">Kernel::getBundle</a></td><td><div align="right">60%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2439">Kernel::initializeBundles</a></td><td><div align="right">62%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2834">ConfigCache::isFresh</a></td><td><div align="right">71%</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#3442">appTestDebugProjectContainer::getParameter</a></td><td><div align="right">75%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2266">Kernel::boot</a></td><td><div align="right">76%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2779">Bundle::getName</a></td><td><div align="right">80%</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2291">Kernel::shutdown</a></td><td><div align="right">88%</div></td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th><div align="left">Method</div></th>
+         <th><div align="right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></div></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="var/bootstrap.php.cache.html#468">Request::create</a></td><td><div align="right">306</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1075">Request::prepareBaseUrl</a></td><td><div align="right">306</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1309">Response::prepare</a></td><td><div align="right">272</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#347">ServerBag::getHeaders</a></td><td><div align="right">240</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#31">ParameterBag::get</a></td><td><div align="right">210</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#829">Request::getHost</a></td><td><div align="right">156</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1837">ResponseHeaderBag::makeDisposition</a></td><td><div align="right">110</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1578">Response::setCache</a></td><td><div align="right">110</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2598">Kernel::stripComments</a></td><td><div align="right">110</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#538">Request::duplicate</a></td><td><div align="right">110</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1043">Request::prepareRequestUri</a></td><td><div align="right">90</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#751">Request::getPort</a></td><td><div align="right">90</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2788">Bundle::registerCommands</a></td><td><div align="right">90</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1860">ResponseHeaderBag::computeCacheControlValue</a></td><td><div align="right">90</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2001">Container::get</a></td><td><div align="right">79</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2976">HttpKernel::handleException</a></td><td><div align="right">72</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2094">Container::leaveScope</a></td><td><div align="right">72</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2068">Container::enterScope</a></td><td><div align="right">72</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#3003">HttpKernel::varToString</a></td><td><div align="right">72</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#990">Request::getLanguages</a></td><td><div align="right">72</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#968">Request::getPreferredLanguage</a></td><td><div align="right">72</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1640">Response::isNotModified</a></td><td><div align="right">72</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1701">Response::closeOutputBuffers</a></td><td><div align="right">72</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#321">FileBag::fixPhpFilesArray</a></td><td><div align="right">56</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#166">HeaderBag::get</a></td><td><div align="right">56</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2119">Container::addScope</a></td><td><div align="right">56</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2932">HttpKernel::handleRaw</a></td><td><div align="right">56</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2337">Kernel::locateResource</a></td><td><div align="right">53</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1815">ResponseHeaderBag::getCookies</a></td><td><div align="right">42</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#946">Request::getContent</a></td><td><div align="right">42</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1134">Request::preparePathInfo</a></td><td><div align="right">42</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2529">Kernel::buildContainer</a></td><td><div align="right">42</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#698">Request::getClientIps</a></td><td><div align="right">37</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#595">Request::overrideGlobals</a></td><td><div align="right">36</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1720">Response::ensureIEOverSSLCompatibility</a></td><td><div align="right">30</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2741">Bundle::getContainerExtension</a></td><td><div align="right">30</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1347">Response::sendHeaders</a></td><td><div align="right">30</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1380">Response::setContent</a></td><td><div align="right">30</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#98">ParameterBag::filter</a></td><td><div align="right">30</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1431">Response::isCacheable</a></td><td><div align="right">30</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1401">Response::setStatusCode</a></td><td><div align="right">30</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#786">Request::getHttpHost</a></td><td><div align="right">30</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#300">FileBag::convertFileInformation</a></td><td><div align="right">30</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2855">ConfigCache::write</a></td><td><div align="right">30</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#887">Request::getFormat</a></td><td><div align="right">30</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#822">Request::isSecure</a></td><td><div align="right">30</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#862">Request::getMethod</a></td><td><div align="right">30</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2549">Kernel::prepareContainer</a></td><td><div align="right">25</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#650">Request::normalizeQueryString</a></td><td><div align="right">21</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1969">Container::set</a></td><td><div align="right">20</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1566">Response::setEtag</a></td><td><div align="right">20</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1117">Request::prepareBasePath</a></td><td><div align="right">20</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1802">ResponseHeaderBag::removeCookie</a></td><td><div align="right">20</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#245">HeaderBag::getCacheControlHeader</a></td><td><div align="right">20</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#180">HeaderBag::set</a></td><td><div align="right">20</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#131">HeaderBag::__toString</a></td><td><div align="right">20</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1992">Container::has</a></td><td><div align="right">20</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#261">HeaderBag::parseCacheControl</a></td><td><div align="right">20</div></td></tr>
+       <tr><td><a href="var/cache/test/doctrine/orm/Proxies/__CG__AbdwgJobeetBundleEntityCategory.php.html#76">Category::__wakeup</a></td><td><div align="right">20</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2439">Kernel::initializeBundles</a></td><td><div align="right">17</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1508">Response::getMaxAge</a></td><td><div align="right">14</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2318">Kernel::isClassInActiveBundle</a></td><td><div align="right">12</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2433">Kernel::doLoadClassCache</a></td><td><div align="right">12</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2652">ApcClassLoader::__construct</a></td><td><div align="right">12</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2282">Kernel::terminate</a></td><td><div align="right">12</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2519">Kernel::getEnvParameters</a></td><td><div align="right">12</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2057">Container::getServiceIds</a></td><td><div align="right">12</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1693">Response::isRedirect</a></td><td><div align="right">12</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1624">Response::getVary</a></td><td><div align="right">12</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2574">Kernel::dumpContainer</a></td><td><div align="right">12</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2906">HttpKernel::handle</a></td><td><div align="right">12</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1165">Request::getUrlencodedPrefix</a></td><td><div align="right">12</div></td></tr>
+       <tr><td><a href="var/cache/test/doctrine/orm/Proxies/__CG__AbdwgJobeetBundleEntityCategory.php.html#179">Category::getId</a></td><td><div align="right">12</div></td></tr>
+       <tr><td><a href="var/cache/test/doctrine/orm/Proxies/__CG__AbdwgJobeetBundleEntityCategory.php.html#79">Category::anonymous function</a></td><td><div align="right">12</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1156">Request::setPhpDefaultLocale</a></td><td><div align="right">12</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#880">Request::getMimeType</a></td><td><div align="right">12</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#457">Request::createFromGlobals</a></td><td><div align="right">12</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#209">HeaderBag::getDate</a></td><td><div align="right">12</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#287">FileBag::set</a></td><td><div align="right">12</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1176">Request::createRequestFromFactory</a></td><td><div align="right">12</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#901">Request::setFormat</a></td><td><div align="right">12</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1368">Response::send</a></td><td><div align="right">12</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2834">ConfigCache::isFresh</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/cache/test/doctrine/orm/Proxies/__CG__AbdwgJobeetBundleEntityCategory.php.html#293">Category::setActiveJobs</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/cache/test/doctrine/orm/Proxies/__CG__AbdwgJobeetBundleEntityCategory.php.html#304">Category::getActiveJobs</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#1719">appTestDebugProjectContainer::getProfilerService</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/cache/test/doctrine/orm/Proxies/__CG__AbdwgJobeetBundleEntityCategory.php.html#271">Category::getAffiliates</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/cache/test/doctrine/orm/Proxies/__CG__AbdwgJobeetBundleEntityCategory.php.html#249">Category::addAffiliate</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/cache/test/doctrine/orm/Proxies/__CG__AbdwgJobeetBundleEntityCategory.php.html#260">Category::removeAffiliate</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/cache/test/doctrine/orm/Proxies/__CG__AbdwgJobeetBundleEntityCategory.php.html#315">Category::getSlug</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/cache/test/doctrine/orm/Proxies/__CG__AbdwgJobeetBundleEntityCategory.php.html#282">Category::__toString</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/cache/test/doctrine/orm/Proxies/__CG__AbdwgJobeetBundleEntityCategory.php.html#326">Category::setMoreJobs</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/cache/test/doctrine/orm/Proxies/__CG__AbdwgJobeetBundleEntityCategory.php.html#348">Category::setSlug</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/cache/test/doctrine/orm/Proxies/__CG__AbdwgJobeetBundleEntityCategory.php.html#359">Category::setSlugValue</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/cache/test/doctrine/orm/Proxies/__CG__AbdwgJobeetBundleEntityCategory.php.html#337">Category::getMoreJobs</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#3052">ContainerAwareHttpKernel::handle</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/cache/test/doctrine/orm/Proxies/__CG__AbdwgJobeetBundleEntityCategory.php.html#238">Category::getJobs</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2507">Kernel::getKernelParameters</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#317">appTestDebugProjectContainer::getAssetic_ControllerService</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/cache/test/doctrine/orm/Proxies/__CG__AbdwgJobeetBundleEntityCategory.php.html#227">Category::removeJob</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/cache/test/doctrine/orm/Proxies/__CG__AbdwgJobeetBundleEntityCategory.php.html#98">Category::__clone</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/cache/test/doctrine/orm/Proxies/__CG__AbdwgJobeetBundleEntityCategory.php.html#106">Category::__load</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2678">ApcClassLoader::findFile</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/cache/test/doctrine/orm/Proxies/__CG__AbdwgJobeetBundleEntityCategory.php.html#64">Category::__sleep</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#3474">appTestDebugProjectContainer::getParameterBag</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2417">Kernel::getStartTime</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#2384">appTestDebugProjectContainer::getTemplating_Helper_AssetsService</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2671">ApcClassLoader::loadClass</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2922">HttpKernel::terminateWithException</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/cache/test/doctrine/orm/Proxies/__CG__AbdwgJobeetBundleEntityCategory.php.html#216">Category::addJob</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2900">HttpKernel::__construct</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/cache/test/doctrine/orm/Proxies/__CG__AbdwgJobeetBundleEntityCategory.php.html#205">Category::getName</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/cache/test/doctrine/orm/Proxies/__CG__AbdwgJobeetBundleEntityCategory.php.html#194">Category::setName</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#3044">ContainerAwareHttpKernel::__construct</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#1786">appTestDebugProjectContainer::getRequestService</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2566">Kernel::getContainerBuilder</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1677">Response::isServerError</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#934">Request::getLocale</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#964">Request::isNoCache</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#923">Request::setDefaultLocale</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#908">Request::getRequestFormat</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#817">Request::getQueryString</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1018">Request::getCharsets</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1025">Request::getEncodings</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1461">Response::mustRevalidate</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1445">Response::isValidateable</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1284">Response::__construct</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1032">Request::getAcceptableContentTypes</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#806">Request::getUri</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#795">Request::getRequestUri</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#228">HeaderBag::getCacheControlDirective</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#294">FileBag::add</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#201">HeaderBag::remove</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#160">HeaderBag::add</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#125">HeaderBag::__construct</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#636">Request::setTrustedHeaderName</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#686">Request::hasPreviousSession</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#777">Request::getUserInfo</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#747">Request::getScheme</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#740">Request::getBaseUrl</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#733">Request::getBasePath</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1482">Response::expire</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1475">Response::getAge</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1781">ResponseHeaderBag::remove</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1769">ResponseHeaderBag::set</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1761">ResponseHeaderBag::replace</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1748">ResponseHeaderBag::__toString</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1794">ResponseHeaderBag::getCacheControlDirective</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1939">Container::__construct</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2303">Kernel::handle</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2258">Kernel::__clone</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2052">Container::initialized</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1673">Response::isClientError</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1741">ResponseHeaderBag::__construct</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1611">Response::setNotModified</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1551">Response::setLastModified</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1669">Response::isRedirection</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1657">Response::isInvalid</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1661">Response::isInformational</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1531">Response::getTtl</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1665">Response::isSuccessful</a></td><td><div align="right">6</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2489">Kernel::initializeContainer</a></td><td><div align="right">5</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1497">Response::setExpires</a></td><td><div align="right">4</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2266">Kernel::boot</a></td><td><div align="right">4</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#726">Request::getPathInfo</a></td><td><div align="right">4</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#643">Request::getTrustedHeaderName</a></td><td><div align="right">3</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2327">Kernel::getBundle</a></td><td><div align="right">3</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#1489">Response::getExpires</a></td><td><div align="right">3</div></td></tr>
+       <tr><td><a href="var/cache/test/appTestDebugProjectContainer.php.html#3442">appTestDebugProjectContainer::getParameter</a></td><td><div align="right">3</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2779">Bundle::getName</a></td><td><div align="right">3</div></td></tr>
+       <tr><td><a href="var/bootstrap.php.cache.html#2291">Kernel::shutdown</a></td><td><div align="right">3</div></td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 2.0.5</a> using <a href="http://php.net/" target="_top">PHP 5.5.12</a> and <a href="http://phpunit.de/">PHPUnit 4.0.17</a> at Thu Jun 26 11:26:52 CST 2014.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="../js/jquery.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/holder.js" type="text/javascript"></script>
+  <script src="../js/d3.min.js" type="text/javascript"></script>
+  <script src="../js/nv.d3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([7,3,1,2,1,1,0,1,0,0,0,1], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([463,2,3,3,1,3,5,2,3,2,0,41], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.scatter.onlyCircles(false);
+    chart.tooltipContent(function(key, y, e, graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[20,33,"<a href=\"var\/bootstrap.php.cache.html#8\">ParameterBag<\/a>"],[0,44,"<a href=\"var\/bootstrap.php.cache.html#121\">HeaderBag<\/a>"],[0,19,"<a href=\"var\/bootstrap.php.cache.html#275\">FileBag<\/a>"],[0,15,"<a href=\"var\/bootstrap.php.cache.html#345\">ServerBag<\/a>"],[2.5440313111546,231,"<a href=\"var\/bootstrap.php.cache.html#393\">Request<\/a>"],[1.5503875968992,143,"<a href=\"var\/bootstrap.php.cache.html#1191\">Response<\/a>"],[0,45,"<a href=\"var\/bootstrap.php.cache.html#1732\">ResponseHeaderBag<\/a>"],[16.778523489933,70,"<a href=\"var\/bootstrap.php.cache.html#1928\">Container<\/a>"],[34.296028880866,110,"<a href=\"var\/bootstrap.php.cache.html#2226\">Kernel<\/a>"],[0,10,"<a href=\"var\/bootstrap.php.cache.html#2648\">ApcClassLoader<\/a>"],[100,1,"<a href=\"var\/bootstrap.php.cache.html#2710\">ContainerAware<\/a>"],[21.818181818182,24,"<a href=\"var\/bootstrap.php.cache.html#2727\">Bundle<\/a>"],[48.387096774194,14,"<a href=\"var\/bootstrap.php.cache.html#2821\">ConfigCache<\/a>"],[0,33,"<a href=\"var\/bootstrap.php.cache.html#2895\">HttpKernel<\/a>"],[0,4,"<a href=\"var\/bootstrap.php.cache.html#3041\">ContainerAwareHttpKernel<\/a>"],[66.826538768985,229,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#17\">appTestDebugProjectContainer<\/a>"],[4.4117647058824,56,"<a href=\"var\/cache\/test\/doctrine\/orm\/Proxies\/__CG__AbdwgJobeetBundleEntityCategory.php.html#8\">Category<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.scatter.onlyCircles(false);
+    chart.tooltipContent(function(key, y, e, graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[100,1,"<a href=\"var\/bootstrap.php.cache.html#11\">ParameterBag::__construct<\/a>"],[100,1,"<a href=\"var\/bootstrap.php.cache.html#15\">ParameterBag::all<\/a>"],[50,1,"<a href=\"var\/bootstrap.php.cache.html#19\">ParameterBag::keys<\/a>"],[100,1,"<a href=\"var\/bootstrap.php.cache.html#23\">ParameterBag::replace<\/a>"],[100,1,"<a href=\"var\/bootstrap.php.cache.html#27\">ParameterBag::add<\/a>"],[0,14,"<a href=\"var\/bootstrap.php.cache.html#31\">ParameterBag::get<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#70\">ParameterBag::set<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#74\">ParameterBag::has<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#78\">ParameterBag::remove<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#82\">ParameterBag::getAlpha<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#86\">ParameterBag::getAlnum<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#90\">ParameterBag::getDigits<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#94\">ParameterBag::getInt<\/a>"],[0,5,"<a href=\"var\/bootstrap.php.cache.html#98\">ParameterBag::filter<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#109\">ParameterBag::getIterator<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#113\">ParameterBag::count<\/a>"],[0,2,"<a href=\"var\/bootstrap.php.cache.html#125\">HeaderBag::__construct<\/a>"],[0,4,"<a href=\"var\/bootstrap.php.cache.html#131\">HeaderBag::__toString<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#147\">HeaderBag::all<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#151\">HeaderBag::keys<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#155\">HeaderBag::replace<\/a>"],[0,2,"<a href=\"var\/bootstrap.php.cache.html#160\">HeaderBag::add<\/a>"],[0,7,"<a href=\"var\/bootstrap.php.cache.html#166\">HeaderBag::get<\/a>"],[0,4,"<a href=\"var\/bootstrap.php.cache.html#180\">HeaderBag::set<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#193\">HeaderBag::has<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#197\">HeaderBag::contains<\/a>"],[0,2,"<a href=\"var\/bootstrap.php.cache.html#201\">HeaderBag::remove<\/a>"],[0,3,"<a href=\"var\/bootstrap.php.cache.html#209\">HeaderBag::getDate<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#219\">HeaderBag::addCacheControlDirective<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#224\">HeaderBag::hasCacheControlDirective<\/a>"],[0,2,"<a href=\"var\/bootstrap.php.cache.html#228\">HeaderBag::getCacheControlDirective<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#232\">HeaderBag::removeCacheControlDirective<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#237\">HeaderBag::getIterator<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#241\">HeaderBag::count<\/a>"],[0,4,"<a href=\"var\/bootstrap.php.cache.html#245\">HeaderBag::getCacheControlHeader<\/a>"],[0,4,"<a href=\"var\/bootstrap.php.cache.html#261\">HeaderBag::parseCacheControl<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#278\">FileBag::__construct<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#282\">FileBag::replace<\/a>"],[0,3,"<a href=\"var\/bootstrap.php.cache.html#287\">FileBag::set<\/a>"],[0,2,"<a href=\"var\/bootstrap.php.cache.html#294\">FileBag::add<\/a>"],[0,5,"<a href=\"var\/bootstrap.php.cache.html#300\">FileBag::convertFileInformation<\/a>"],[0,7,"<a href=\"var\/bootstrap.php.cache.html#321\">FileBag::fixPhpFilesArray<\/a>"],[0,15,"<a href=\"var\/bootstrap.php.cache.html#347\">ServerBag::getHeaders<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#432\">Request::__construct<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#436\">Request::initialize<\/a>"],[0,3,"<a href=\"var\/bootstrap.php.cache.html#457\">Request::createFromGlobals<\/a>"],[0,17,"<a href=\"var\/bootstrap.php.cache.html#468\">Request::create<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#534\">Request::setFactory<\/a>"],[0,10,"<a href=\"var\/bootstrap.php.cache.html#538\">Request::duplicate<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#578\">Request::__clone<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#588\">Request::__toString<\/a>"],[5.2631578947368,6,"<a href=\"var\/bootstrap.php.cache.html#595\">Request::overrideGlobals<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#617\">Request::setTrustedProxies<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#621\">Request::getTrustedProxies<\/a>"],[100,1,"<a href=\"var\/bootstrap.php.cache.html#625\">Request::setTrustedHosts<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#627\">Request::anonymous function<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#632\">Request::getTrustedHosts<\/a>"],[0,2,"<a href=\"var\/bootstrap.php.cache.html#636\">Request::setTrustedHeaderName<\/a>"],[25,2,"<a href=\"var\/bootstrap.php.cache.html#643\">Request::getTrustedHeaderName<\/a>"],[25,6,"<a href=\"var\/bootstrap.php.cache.html#650\">Request::normalizeQueryString<\/a>"],[100,1,"<a href=\"var\/bootstrap.php.cache.html#670\">Request::enableHttpMethodParameterOverride<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#674\">Request::getHttpMethodParameterOverride<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#678\">Request::get<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#682\">Request::getSession<\/a>"],[0,2,"<a href=\"var\/bootstrap.php.cache.html#686\">Request::hasPreviousSession<\/a>"],[50,1,"<a href=\"var\/bootstrap.php.cache.html#690\">Request::hasSession<\/a>"],[50,1,"<a href=\"var\/bootstrap.php.cache.html#694\">Request::setSession<\/a>"],[14.285714285714,7,"<a href=\"var\/bootstrap.php.cache.html#698\">Request::getClientIps<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#717\">Request::getClientIp<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#722\">Request::getScriptName<\/a>"],[20,2,"<a href=\"var\/bootstrap.php.cache.html#726\">Request::getPathInfo<\/a>"],[0,2,"<a href=\"var\/bootstrap.php.cache.html#733\">Request::getBasePath<\/a>"],[0,2,"<a href=\"var\/bootstrap.php.cache.html#740\">Request::getBaseUrl<\/a>"],[0,2,"<a href=\"var\/bootstrap.php.cache.html#747\">Request::getScheme<\/a>"],[0,9,"<a href=\"var\/bootstrap.php.cache.html#751\">Request::getPort<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#769\">Request::getUser<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#773\">Request::getPassword<\/a>"],[0,2,"<a href=\"var\/bootstrap.php.cache.html#777\">Request::getUserInfo<\/a>"],[0,5,"<a href=\"var\/bootstrap.php.cache.html#786\">Request::getHttpHost<\/a>"],[0,2,"<a href=\"var\/bootstrap.php.cache.html#795\">Request::getRequestUri<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#802\">Request::getSchemeAndHttpHost<\/a>"],[0,2,"<a href=\"var\/bootstrap.php.cache.html#806\">Request::getUri<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#813\">Request::getUriForPath<\/a>"],[0,2,"<a href=\"var\/bootstrap.php.cache.html#817\">Request::getQueryString<\/a>"],[0,5,"<a href=\"var\/bootstrap.php.cache.html#822\">Request::isSecure<\/a>"],[0,12,"<a href=\"var\/bootstrap.php.cache.html#829\">Request::getHost<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#857\">Request::setMethod<\/a>"],[0,5,"<a href=\"var\/bootstrap.php.cache.html#862\">Request::getMethod<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#876\">Request::getRealMethod<\/a>"],[0,3,"<a href=\"var\/bootstrap.php.cache.html#880\">Request::getMimeType<\/a>"],[0,5,"<a href=\"var\/bootstrap.php.cache.html#887\">Request::getFormat<\/a>"],[0,3,"<a href=\"var\/bootstrap.php.cache.html#901\">Request::setFormat<\/a>"],[0,2,"<a href=\"var\/bootstrap.php.cache.html#908\">Request::getRequestFormat<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#915\">Request::setRequestFormat<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#919\">Request::getContentType<\/a>"],[0,2,"<a href=\"var\/bootstrap.php.cache.html#923\">Request::setDefaultLocale<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#930\">Request::setLocale<\/a>"],[0,2,"<a href=\"var\/bootstrap.php.cache.html#934\">Request::getLocale<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#938\">Request::isMethod<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#942\">Request::isMethodSafe<\/a>"],[0,6,"<a href=\"var\/bootstrap.php.cache.html#946\">Request::getContent<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#960\">Request::getETags<\/a>"],[0,2,"<a href=\"var\/bootstrap.php.cache.html#964\">Request::isNoCache<\/a>"],[0,8,"<a href=\"var\/bootstrap.php.cache.html#968\">Request::getPreferredLanguage<\/a>"],[0,8,"<a href=\"var\/bootstrap.php.cache.html#990\">Request::getLanguages<\/a>"],[0,2,"<a href=\"var\/bootstrap.php.cache.html#1018\">Request::getCharsets<\/a>"],[0,2,"<a href=\"var\/bootstrap.php.cache.html#1025\">Request::getEncodings<\/a>"],[0,2,"<a href=\"var\/bootstrap.php.cache.html#1032\">Request::getAcceptableContentTypes<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#1039\">Request::isXmlHttpRequest<\/a>"],[0,9,"<a href=\"var\/bootstrap.php.cache.html#1043\">Request::prepareRequestUri<\/a>"],[0,17,"<a href=\"var\/bootstrap.php.cache.html#1075\">Request::prepareBaseUrl<\/a>"],[0,4,"<a href=\"var\/bootstrap.php.cache.html#1117\">Request::prepareBasePath<\/a>"],[0,6,"<a href=\"var\/bootstrap.php.cache.html#1134\">Request::preparePathInfo<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#1151\">Request::initializeFormats<\/a>"],[0,3,"<a href=\"var\/bootstrap.php.cache.html#1156\">Request::setPhpDefaultLocale<\/a>"],[0,3,"<a href=\"var\/bootstrap.php.cache.html#1165\">Request::getUrlencodedPrefix<\/a>"],[0,3,"<a href=\"var\/bootstrap.php.cache.html#1176\">Request::createRequestFromFactory<\/a>"],[0,2,"<a href=\"var\/bootstrap.php.cache.html#1284\">Response::__construct<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#1294\">Response::create<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#1298\">Response::__toString<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#1305\">Response::__clone<\/a>"],[0,16,"<a href=\"var\/bootstrap.php.cache.html#1309\">Response::prepare<\/a>"],[0,5,"<a href=\"var\/bootstrap.php.cache.html#1347\">Response::sendHeaders<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#1363\">Response::sendContent<\/a>"],[0,3,"<a href=\"var\/bootstrap.php.cache.html#1368\">Response::send<\/a>"],[0,5,"<a href=\"var\/bootstrap.php.cache.html#1380\">Response::setContent<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#1388\">Response::getContent<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#1392\">Response::setProtocolVersion<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#1397\">Response::getProtocolVersion<\/a>"],[0,5,"<a href=\"var\/bootstrap.php.cache.html#1401\">Response::setStatusCode<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#1418\">Response::getStatusCode<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#1422\">Response::setCharset<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#1427\">Response::getCharset<\/a>"],[0,5,"<a href=\"var\/bootstrap.php.cache.html#1431\">Response::isCacheable<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#1441\">Response::isFresh<\/a>"],[0,2,"<a href=\"var\/bootstrap.php.cache.html#1445\">Response::isValidateable<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#1449\">Response::setPrivate<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#1455\">Response::setPublic<\/a>"],[0,2,"<a href=\"var\/bootstrap.php.cache.html#1461\">Response::mustRevalidate<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#1465\">Response::getDate<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#1469\">Response::setDate<\/a>"],[0,2,"<a href=\"var\/bootstrap.php.cache.html#1475\">Response::getAge<\/a>"],[0,2,"<a href=\"var\/bootstrap.php.cache.html#1482\">Response::expire<\/a>"],[33.333333333333,2,"<a href=\"var\/bootstrap.php.cache.html#1489\">Response::getExpires<\/a>"],[12.5,2,"<a href=\"var\/bootstrap.php.cache.html#1497\">Response::setExpires<\/a>"],[12.5,4,"<a href=\"var\/bootstrap.php.cache.html#1508\">Response::getMaxAge<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#1520\">Response::setMaxAge<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#1525\">Response::setSharedMaxAge<\/a>"],[0,2,"<a href=\"var\/bootstrap.php.cache.html#1531\">Response::getTtl<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#1537\">Response::setTtl<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#1542\">Response::setClientTtl<\/a>"],[50,1,"<a href=\"var\/bootstrap.php.cache.html#1547\">Response::getLastModified<\/a>"],[0,2,"<a href=\"var\/bootstrap.php.cache.html#1551\">Response::setLastModified<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#1562\">Response::getEtag<\/a>"],[0,4,"<a href=\"var\/bootstrap.php.cache.html#1566\">Response::setEtag<\/a>"],[0,10,"<a href=\"var\/bootstrap.php.cache.html#1578\">Response::setCache<\/a>"],[0,2,"<a href=\"var\/bootstrap.php.cache.html#1611\">Response::setNotModified<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#1620\">Response::hasVary<\/a>"],[0,3,"<a href=\"var\/bootstrap.php.cache.html#1624\">Response::getVary<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#1635\">Response::setVary<\/a>"],[0,8,"<a href=\"var\/bootstrap.php.cache.html#1640\">Response::isNotModified<\/a>"],[0,2,"<a href=\"var\/bootstrap.php.cache.html#1657\">Response::isInvalid<\/a>"],[0,2,"<a href=\"var\/bootstrap.php.cache.html#1661\">Response::isInformational<\/a>"],[0,2,"<a href=\"var\/bootstrap.php.cache.html#1665\">Response::isSuccessful<\/a>"],[0,2,"<a href=\"var\/bootstrap.php.cache.html#1669\">Response::isRedirection<\/a>"],[0,2,"<a href=\"var\/bootstrap.php.cache.html#1673\">Response::isClientError<\/a>"],[0,2,"<a href=\"var\/bootstrap.php.cache.html#1677\">Response::isServerError<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#1681\">Response::isOk<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#1685\">Response::isForbidden<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#1689\">Response::isNotFound<\/a>"],[0,3,"<a href=\"var\/bootstrap.php.cache.html#1693\">Response::isRedirect<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#1697\">Response::isEmpty<\/a>"],[0,8,"<a href=\"var\/bootstrap.php.cache.html#1701\">Response::closeOutputBuffers<\/a>"],[0,5,"<a href=\"var\/bootstrap.php.cache.html#1720\">Response::ensureIEOverSSLCompatibility<\/a>"],[0,2,"<a href=\"var\/bootstrap.php.cache.html#1741\">ResponseHeaderBag::__construct<\/a>"],[0,2,"<a href=\"var\/bootstrap.php.cache.html#1748\">ResponseHeaderBag::__toString<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#1757\">ResponseHeaderBag::allPreserveCase<\/a>"],[0,2,"<a href=\"var\/bootstrap.php.cache.html#1761\">ResponseHeaderBag::replace<\/a>"],[0,2,"<a href=\"var\/bootstrap.php.cache.html#1769\">ResponseHeaderBag::set<\/a>"],[0,2,"<a href=\"var\/bootstrap.php.cache.html#1781\">ResponseHeaderBag::remove<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#1790\">ResponseHeaderBag::hasCacheControlDirective<\/a>"],[0,2,"<a href=\"var\/bootstrap.php.cache.html#1794\">ResponseHeaderBag::getCacheControlDirective<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#1798\">ResponseHeaderBag::setCookie<\/a>"],[0,4,"<a href=\"var\/bootstrap.php.cache.html#1802\">ResponseHeaderBag::removeCookie<\/a>"],[0,6,"<a href=\"var\/bootstrap.php.cache.html#1815\">ResponseHeaderBag::getCookies<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#1833\">ResponseHeaderBag::clearCookie<\/a>"],[0,10,"<a href=\"var\/bootstrap.php.cache.html#1837\">ResponseHeaderBag::makeDisposition<\/a>"],[0,9,"<a href=\"var\/bootstrap.php.cache.html#1860\">ResponseHeaderBag::computeCacheControlValue<\/a>"],[0,2,"<a href=\"var\/bootstrap.php.cache.html#1939\">Container::__construct<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#1944\">Container::compile<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#1949\">Container::isFrozen<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#1953\">Container::getParameterBag<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#1957\">Container::getParameter<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#1961\">Container::hasParameter<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#1965\">Container::setParameter<\/a>"],[42.105263157895,8,"<a href=\"var\/bootstrap.php.cache.html#1969\">Container::set<\/a>"],[0,4,"<a href=\"var\/bootstrap.php.cache.html#1992\">Container::has<\/a>"],[42.5,18,"<a href=\"var\/bootstrap.php.cache.html#2001\">Container::get<\/a>"],[0,2,"<a href=\"var\/bootstrap.php.cache.html#2052\">Container::initialized<\/a>"],[0,3,"<a href=\"var\/bootstrap.php.cache.html#2057\">Container::getServiceIds<\/a>"],[0,8,"<a href=\"var\/bootstrap.php.cache.html#2068\">Container::enterScope<\/a>"],[0,8,"<a href=\"var\/bootstrap.php.cache.html#2094\">Container::leaveScope<\/a>"],[0,7,"<a href=\"var\/bootstrap.php.cache.html#2119\">Container::addScope<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#2139\">Container::hasScope<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#2143\">Container::isScopeActive<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#2147\">Container::camelize<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#2151\">Container::underscore<\/a>"],[100,2,"<a href=\"var\/bootstrap.php.cache.html#2244\">Kernel::__construct<\/a>"],[100,1,"<a href=\"var\/bootstrap.php.cache.html#2255\">Kernel::init<\/a>"],[0,2,"<a href=\"var\/bootstrap.php.cache.html#2258\">Kernel::__clone<\/a>"],[76.923076923077,4,"<a href=\"var\/bootstrap.php.cache.html#2266\">Kernel::boot<\/a>"],[0,3,"<a href=\"var\/bootstrap.php.cache.html#2282\">Kernel::terminate<\/a>"],[88.888888888889,3,"<a href=\"var\/bootstrap.php.cache.html#2291\">Kernel::shutdown<\/a>"],[0,2,"<a href=\"var\/bootstrap.php.cache.html#2303\">Kernel::handle<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#2310\">Kernel::getHttpKernel<\/a>"],[100,1,"<a href=\"var\/bootstrap.php.cache.html#2314\">Kernel::getBundles<\/a>"],[0,3,"<a href=\"var\/bootstrap.php.cache.html#2318\">Kernel::isClassInActiveBundle<\/a>"],[60,3,"<a href=\"var\/bootstrap.php.cache.html#2327\">Kernel::getBundle<\/a>"],[47.222222222222,16,"<a href=\"var\/bootstrap.php.cache.html#2337\">Kernel::locateResource<\/a>"],[100,2,"<a href=\"var\/bootstrap.php.cache.html#2382\">Kernel::getName<\/a>"],[100,1,"<a href=\"var\/bootstrap.php.cache.html#2389\">Kernel::getEnvironment<\/a>"],[100,1,"<a href=\"var\/bootstrap.php.cache.html#2393\">Kernel::isDebug<\/a>"],[100,2,"<a href=\"var\/bootstrap.php.cache.html#2397\">Kernel::getRootDir<\/a>"],[100,1,"<a href=\"var\/bootstrap.php.cache.html#2405\">Kernel::getContainer<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#2409\">Kernel::loadClassCache<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#2413\">Kernel::setClassCache<\/a>"],[0,2,"<a href=\"var\/bootstrap.php.cache.html#2417\">Kernel::getStartTime<\/a>"],[100,1,"<a href=\"var\/bootstrap.php.cache.html#2421\">Kernel::getCacheDir<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#2425\">Kernel::getLogDir<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#2429\">Kernel::getCharset<\/a>"],[0,3,"<a href=\"var\/bootstrap.php.cache.html#2433\">Kernel::doLoadClassCache<\/a>"],[62.857142857143,11,"<a href=\"var\/bootstrap.php.cache.html#2439\">Kernel::initializeBundles<\/a>"],[100,2,"<a href=\"var\/bootstrap.php.cache.html#2481\">Kernel::getContainerClass<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#2485\">Kernel::getContainerBaseClass<\/a>"],[56.25,4,"<a href=\"var\/bootstrap.php.cache.html#2489\">Kernel::initializeContainer<\/a>"],[0,2,"<a href=\"var\/bootstrap.php.cache.html#2507\">Kernel::getKernelParameters<\/a>"],[0,3,"<a href=\"var\/bootstrap.php.cache.html#2519\">Kernel::getEnvParameters<\/a>"],[0,6,"<a href=\"var\/bootstrap.php.cache.html#2529\">Kernel::buildContainer<\/a>"],[6.6666666666667,5,"<a href=\"var\/bootstrap.php.cache.html#2549\">Kernel::prepareContainer<\/a>"],[0,2,"<a href=\"var\/bootstrap.php.cache.html#2566\">Kernel::getContainerBuilder<\/a>"],[0,3,"<a href=\"var\/bootstrap.php.cache.html#2574\">Kernel::dumpContainer<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#2586\">Kernel::getContainerLoader<\/a>"],[0,10,"<a href=\"var\/bootstrap.php.cache.html#2598\">Kernel::stripComments<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#2635\">Kernel::serialize<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#2639\">Kernel::unserialize<\/a>"],[0,3,"<a href=\"var\/bootstrap.php.cache.html#2652\">ApcClassLoader::__construct<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#2663\">ApcClassLoader::register<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#2667\">ApcClassLoader::unregister<\/a>"],[0,2,"<a href=\"var\/bootstrap.php.cache.html#2671\">ApcClassLoader::loadClass<\/a>"],[0,2,"<a href=\"var\/bootstrap.php.cache.html#2678\">ApcClassLoader::findFile<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#2685\">ApcClassLoader::__call<\/a>"],[100,1,"<a href=\"var\/bootstrap.php.cache.html#2713\">ContainerAware::setContainer<\/a>"],[100,1,"<a href=\"var\/bootstrap.php.cache.html#2732\">Bundle::boot<\/a>"],[100,1,"<a href=\"var\/bootstrap.php.cache.html#2735\">Bundle::shutdown<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#2738\">Bundle::build<\/a>"],[0,5,"<a href=\"var\/bootstrap.php.cache.html#2741\">Bundle::getContainerExtension<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#2763\">Bundle::getNamespace<\/a>"],[100,2,"<a href=\"var\/bootstrap.php.cache.html#2768\">Bundle::getPath<\/a>"],[100,1,"<a href=\"var\/bootstrap.php.cache.html#2776\">Bundle::getParent<\/a>"],[80,3,"<a href=\"var\/bootstrap.php.cache.html#2779\">Bundle::getName<\/a>"],[0,9,"<a href=\"var\/bootstrap.php.cache.html#2788\">Bundle::registerCommands<\/a>"],[100,1,"<a href=\"var\/bootstrap.php.cache.html#2825\">ConfigCache::__construct<\/a>"],[100,1,"<a href=\"var\/bootstrap.php.cache.html#2830\">ConfigCache::__toString<\/a>"],[71.428571428571,6,"<a href=\"var\/bootstrap.php.cache.html#2834\">ConfigCache::isFresh<\/a>"],[0,5,"<a href=\"var\/bootstrap.php.cache.html#2855\">ConfigCache::write<\/a>"],[100,1,"<a href=\"var\/bootstrap.php.cache.html#2873\">ConfigCache::getMetaFile<\/a>"],[0,2,"<a href=\"var\/bootstrap.php.cache.html#2900\">HttpKernel::__construct<\/a>"],[0,3,"<a href=\"var\/bootstrap.php.cache.html#2906\">HttpKernel::handle<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#2918\">HttpKernel::terminate<\/a>"],[0,2,"<a href=\"var\/bootstrap.php.cache.html#2922\">HttpKernel::terminateWithException<\/a>"],[0,7,"<a href=\"var\/bootstrap.php.cache.html#2932\">HttpKernel::handleRaw<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#2964\">HttpKernel::filterResponse<\/a>"],[0,1,"<a href=\"var\/bootstrap.php.cache.html#2971\">HttpKernel::finishRequest<\/a>"],[0,8,"<a href=\"var\/bootstrap.php.cache.html#2976\">HttpKernel::handleException<\/a>"],[0,8,"<a href=\"var\/bootstrap.php.cache.html#3003\">HttpKernel::varToString<\/a>"],[0,2,"<a href=\"var\/bootstrap.php.cache.html#3044\">ContainerAwareHttpKernel::__construct<\/a>"],[0,2,"<a href=\"var\/bootstrap.php.cache.html#3052\">ContainerAwareHttpKernel::handle<\/a>"],[100,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#24\">appTestDebugProjectContainer::__construct<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#277\">appTestDebugProjectContainer::getAab3a0644ac30d4bc071def84a67c604a59f1c8ac746db9141c8095759bf2ab81Service<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#290\">appTestDebugProjectContainer::getAnnotationReaderService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#303\">appTestDebugProjectContainer::getAssetic_AssetManagerService<\/a>"],[0,2,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#317\">appTestDebugProjectContainer::getAssetic_ControllerService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#336\">appTestDebugProjectContainer::getAssetic_Filter_CssrewriteService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#349\">appTestDebugProjectContainer::getAssetic_FilterManagerService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#362\">appTestDebugProjectContainer::getAssetic_RequestListenerService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#375\">appTestDebugProjectContainer::getCacheClearerService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#388\">appTestDebugProjectContainer::getCacheWarmerService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#406\">appTestDebugProjectContainer::getD24bb096000420235828387673021f07270b16c77a034f1b862d14bdc87de0ed1Service<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#419\">appTestDebugProjectContainer::getD24bb096000420235828387673021f07270b16c77a034f1b862d14bdc87de0ed2Service<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#432\">appTestDebugProjectContainer::getD24bb096000420235828387673021f07270b16c77a034f1b862d14bdc87de0ed3Service<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#445\">appTestDebugProjectContainer::getDataCollector_FormService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#458\">appTestDebugProjectContainer::getDataCollector_Form_ExtractorService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#471\">appTestDebugProjectContainer::getDataCollector_RequestService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#484\">appTestDebugProjectContainer::getDataCollector_RouterService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#497\">appTestDebugProjectContainer::getDebug_ControllerResolverService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#510\">appTestDebugProjectContainer::getDebug_DebugHandlersListenerService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#523\">appTestDebugProjectContainer::getDebug_DeprecationLoggerListenerService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#536\">appTestDebugProjectContainer::getDebug_EmergencyLoggerListenerService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#549\">appTestDebugProjectContainer::getDebug_EventDispatcherService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#590\">appTestDebugProjectContainer::getDebug_ScreamLoggerListenerService<\/a>"],[100,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#603\">appTestDebugProjectContainer::getDebug_StopwatchService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#616\">appTestDebugProjectContainer::getDebug_Templating_Engine_PhpService<\/a>"],[100,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#634\">appTestDebugProjectContainer::getDoctrineService<\/a>"],[100,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#647\">appTestDebugProjectContainer::getDoctrine_Dbal_ConnectionFactoryService<\/a>"],[100,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#660\">appTestDebugProjectContainer::getDoctrine_Dbal_DefaultConnectionService<\/a>"],[100,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#680\">appTestDebugProjectContainer::getDoctrine_Orm_DefaultEntityManagerService<\/a>"],[100,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#725\">appTestDebugProjectContainer::getDoctrine_Orm_DefaultManagerConfiguratorService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#738\">appTestDebugProjectContainer::getDoctrine_Orm_Validator_UniqueService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#751\">appTestDebugProjectContainer::getDoctrine_Orm_ValidatorInitializerService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#764\">appTestDebugProjectContainer::getFileLocatorService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#777\">appTestDebugProjectContainer::getFilesystemService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#790\">appTestDebugProjectContainer::getForm_CsrfProviderService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#803\">appTestDebugProjectContainer::getForm_FactoryService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#816\">appTestDebugProjectContainer::getForm_RegistryService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#829\">appTestDebugProjectContainer::getForm_ResolvedTypeFactoryService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#842\">appTestDebugProjectContainer::getForm_Type_BirthdayService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#855\">appTestDebugProjectContainer::getForm_Type_ButtonService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#868\">appTestDebugProjectContainer::getForm_Type_CheckboxService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#881\">appTestDebugProjectContainer::getForm_Type_ChoiceService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#894\">appTestDebugProjectContainer::getForm_Type_CollectionService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#907\">appTestDebugProjectContainer::getForm_Type_CountryService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#920\">appTestDebugProjectContainer::getForm_Type_CurrencyService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#933\">appTestDebugProjectContainer::getForm_Type_DateService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#946\">appTestDebugProjectContainer::getForm_Type_DatetimeService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#959\">appTestDebugProjectContainer::getForm_Type_EmailService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#972\">appTestDebugProjectContainer::getForm_Type_EntityService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#985\">appTestDebugProjectContainer::getForm_Type_FileService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#998\">appTestDebugProjectContainer::getForm_Type_FormService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#1011\">appTestDebugProjectContainer::getForm_Type_HiddenService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#1024\">appTestDebugProjectContainer::getForm_Type_IntegerService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#1037\">appTestDebugProjectContainer::getForm_Type_LanguageService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#1050\">appTestDebugProjectContainer::getForm_Type_LocaleService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#1063\">appTestDebugProjectContainer::getForm_Type_MoneyService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#1076\">appTestDebugProjectContainer::getForm_Type_NumberService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#1089\">appTestDebugProjectContainer::getForm_Type_PasswordService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#1102\">appTestDebugProjectContainer::getForm_Type_PercentService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#1115\">appTestDebugProjectContainer::getForm_Type_RadioService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#1128\">appTestDebugProjectContainer::getForm_Type_RepeatedService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#1141\">appTestDebugProjectContainer::getForm_Type_ResetService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#1154\">appTestDebugProjectContainer::getForm_Type_SearchService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#1167\">appTestDebugProjectContainer::getForm_Type_SubmitService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#1180\">appTestDebugProjectContainer::getForm_Type_TextService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#1193\">appTestDebugProjectContainer::getForm_Type_TextareaService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#1206\">appTestDebugProjectContainer::getForm_Type_TimeService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#1219\">appTestDebugProjectContainer::getForm_Type_TimezoneService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#1232\">appTestDebugProjectContainer::getForm_Type_UrlService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#1245\">appTestDebugProjectContainer::getForm_TypeExtension_CsrfService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#1258\">appTestDebugProjectContainer::getForm_TypeExtension_Form_DataCollectorService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#1271\">appTestDebugProjectContainer::getForm_TypeExtension_Form_HttpFoundationService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#1284\">appTestDebugProjectContainer::getForm_TypeExtension_Form_ValidatorService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#1297\">appTestDebugProjectContainer::getForm_TypeExtension_Repeated_ValidatorService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#1310\">appTestDebugProjectContainer::getForm_TypeExtension_Submit_ValidatorService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#1323\">appTestDebugProjectContainer::getForm_TypeGuesser_DoctrineService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#1336\">appTestDebugProjectContainer::getForm_TypeGuesser_ValidatorService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#1349\">appTestDebugProjectContainer::getFragment_HandlerService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#1368\">appTestDebugProjectContainer::getFragment_ListenerService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#1381\">appTestDebugProjectContainer::getFragment_Renderer_EsiService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#1398\">appTestDebugProjectContainer::getFragment_Renderer_HincludeService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#1415\">appTestDebugProjectContainer::getFragment_Renderer_InlineService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#1432\">appTestDebugProjectContainer::getHttpKernelService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#1445\">appTestDebugProjectContainer::getKernelService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#1458\">appTestDebugProjectContainer::getLocaleListenerService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#1471\">appTestDebugProjectContainer::getLoggerService<\/a>"],[100,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#1490\">appTestDebugProjectContainer::getMonolog_Handler_ConsoleService<\/a>"],[100,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#1503\">appTestDebugProjectContainer::getMonolog_Handler_DebugService<\/a>"],[100,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#1516\">appTestDebugProjectContainer::getMonolog_Handler_MainService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#1529\">appTestDebugProjectContainer::getMonolog_Logger_DeprecationService<\/a>"],[100,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#1548\">appTestDebugProjectContainer::getMonolog_Logger_DoctrineService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#1567\">appTestDebugProjectContainer::getMonolog_Logger_EmergencyService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#1586\">appTestDebugProjectContainer::getMonolog_Logger_EventService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#1605\">appTestDebugProjectContainer::getMonolog_Logger_ProfilerService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#1624\">appTestDebugProjectContainer::getMonolog_Logger_RequestService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#1643\">appTestDebugProjectContainer::getMonolog_Logger_RouterService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#1662\">appTestDebugProjectContainer::getMonolog_Logger_ScreamService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#1681\">appTestDebugProjectContainer::getMonolog_Logger_SecurityService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#1700\">appTestDebugProjectContainer::getMonolog_Logger_TemplatingService<\/a>"],[0,2,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#1719\">appTestDebugProjectContainer::getProfilerService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#1759\">appTestDebugProjectContainer::getProfilerListenerService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#1772\">appTestDebugProjectContainer::getPropertyAccessorService<\/a>"],[0,2,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#1786\">appTestDebugProjectContainer::getRequestService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#1803\">appTestDebugProjectContainer::getRequestStackService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#1816\">appTestDebugProjectContainer::getResponseListenerService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#1829\">appTestDebugProjectContainer::getRouterService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#1842\">appTestDebugProjectContainer::getRouterListenerService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#1855\">appTestDebugProjectContainer::getRouting_LoaderService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#1882\">appTestDebugProjectContainer::getSecurity_ContextService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#1895\">appTestDebugProjectContainer::getSecurity_Csrf_TokenManagerService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#1908\">appTestDebugProjectContainer::getSecurity_EncoderFactoryService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#1921\">appTestDebugProjectContainer::getSecurity_FirewallService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#1934\">appTestDebugProjectContainer::getSecurity_Firewall_Map_Context_DefaultService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#1953\">appTestDebugProjectContainer::getSecurity_Firewall_Map_Context_DevService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#1966\">appTestDebugProjectContainer::getSecurity_Rememberme_ResponseListenerService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#1979\">appTestDebugProjectContainer::getSecurity_SecureRandomService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#1992\">appTestDebugProjectContainer::getSecurity_Validator_UserPasswordService<\/a>"],[100,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2005\">appTestDebugProjectContainer::getSensioDistribution_WebconfiguratorService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2018\">appTestDebugProjectContainer::getSensioFrameworkExtra_Cache_ListenerService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2031\">appTestDebugProjectContainer::getSensioFrameworkExtra_Controller_ListenerService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2044\">appTestDebugProjectContainer::getSensioFrameworkExtra_Converter_DatetimeService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2057\">appTestDebugProjectContainer::getSensioFrameworkExtra_Converter_Doctrine_OrmService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2070\">appTestDebugProjectContainer::getSensioFrameworkExtra_Converter_ListenerService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2083\">appTestDebugProjectContainer::getSensioFrameworkExtra_Converter_ManagerService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2101\">appTestDebugProjectContainer::getSensioFrameworkExtra_Security_ListenerService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2114\">appTestDebugProjectContainer::getSensioFrameworkExtra_View_GuesserService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2127\">appTestDebugProjectContainer::getSensioFrameworkExtra_View_ListenerService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2140\">appTestDebugProjectContainer::getServiceContainerService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2153\">appTestDebugProjectContainer::getSessionService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2166\">appTestDebugProjectContainer::getSession_Storage_FilesystemService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2179\">appTestDebugProjectContainer::getSession_Storage_NativeService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2192\">appTestDebugProjectContainer::getSession_Storage_PhpBridgeService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2205\">appTestDebugProjectContainer::getSessionListenerService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2218\">appTestDebugProjectContainer::getStreamedResponseListenerService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2231\">appTestDebugProjectContainer::getSwiftmailer_EmailSender_ListenerService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2244\">appTestDebugProjectContainer::getSwiftmailer_Mailer_DefaultService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2257\">appTestDebugProjectContainer::getSwiftmailer_Mailer_Default_Plugin_MessageloggerService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2270\">appTestDebugProjectContainer::getSwiftmailer_Mailer_Default_SpoolService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2283\">appTestDebugProjectContainer::getSwiftmailer_Mailer_Default_TransportService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2300\">appTestDebugProjectContainer::getSwiftmailer_Mailer_Default_Transport_RealService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2313\">appTestDebugProjectContainer::getTemplatingService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2330\">appTestDebugProjectContainer::getTemplating_Asset_PackageFactoryService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2343\">appTestDebugProjectContainer::getTemplating_FilenameParserService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2356\">appTestDebugProjectContainer::getTemplating_GlobalsService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2369\">appTestDebugProjectContainer::getTemplating_Helper_ActionsService<\/a>"],[0,2,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2384\">appTestDebugProjectContainer::getTemplating_Helper_AssetsService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2401\">appTestDebugProjectContainer::getTemplating_Helper_CodeService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2414\">appTestDebugProjectContainer::getTemplating_Helper_FormService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2427\">appTestDebugProjectContainer::getTemplating_Helper_LogoutUrlService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2440\">appTestDebugProjectContainer::getTemplating_Helper_RequestService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2453\">appTestDebugProjectContainer::getTemplating_Helper_RouterService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2466\">appTestDebugProjectContainer::getTemplating_Helper_SecurityService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2479\">appTestDebugProjectContainer::getTemplating_Helper_SessionService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2492\">appTestDebugProjectContainer::getTemplating_Helper_SlotsService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2505\">appTestDebugProjectContainer::getTemplating_Helper_StopwatchService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2518\">appTestDebugProjectContainer::getTemplating_Helper_TranslatorService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2531\">appTestDebugProjectContainer::getTemplating_LoaderService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2544\">appTestDebugProjectContainer::getTemplating_NameParserService<\/a>"],[100,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2554\">appTestDebugProjectContainer::getTest_ClientService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2564\">appTestDebugProjectContainer::getTest_Client_CookiejarService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2574\">appTestDebugProjectContainer::getTest_Client_HistoryService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2587\">appTestDebugProjectContainer::getTest_Session_ListenerService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2600\">appTestDebugProjectContainer::getTranslation_Dumper_CsvService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2613\">appTestDebugProjectContainer::getTranslation_Dumper_IniService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2626\">appTestDebugProjectContainer::getTranslation_Dumper_JsonService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2639\">appTestDebugProjectContainer::getTranslation_Dumper_MoService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2652\">appTestDebugProjectContainer::getTranslation_Dumper_PhpService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2665\">appTestDebugProjectContainer::getTranslation_Dumper_PoService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2678\">appTestDebugProjectContainer::getTranslation_Dumper_QtService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2691\">appTestDebugProjectContainer::getTranslation_Dumper_ResService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2704\">appTestDebugProjectContainer::getTranslation_Dumper_XliffService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2717\">appTestDebugProjectContainer::getTranslation_Dumper_YmlService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2730\">appTestDebugProjectContainer::getTranslation_ExtractorService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2748\">appTestDebugProjectContainer::getTranslation_Extractor_PhpService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2761\">appTestDebugProjectContainer::getTranslation_LoaderService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2791\">appTestDebugProjectContainer::getTranslation_Loader_CsvService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2804\">appTestDebugProjectContainer::getTranslation_Loader_DatService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2817\">appTestDebugProjectContainer::getTranslation_Loader_IniService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2830\">appTestDebugProjectContainer::getTranslation_Loader_JsonService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2843\">appTestDebugProjectContainer::getTranslation_Loader_MoService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2856\">appTestDebugProjectContainer::getTranslation_Loader_PhpService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2869\">appTestDebugProjectContainer::getTranslation_Loader_PoService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2882\">appTestDebugProjectContainer::getTranslation_Loader_QtService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2895\">appTestDebugProjectContainer::getTranslation_Loader_ResService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2908\">appTestDebugProjectContainer::getTranslation_Loader_XliffService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2921\">appTestDebugProjectContainer::getTranslation_Loader_YmlService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2934\">appTestDebugProjectContainer::getTranslation_WriterService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2960\">appTestDebugProjectContainer::getTranslatorService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2973\">appTestDebugProjectContainer::getTranslator_DefaultService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#2986\">appTestDebugProjectContainer::getTwigService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#3019\">appTestDebugProjectContainer::getTwig_Controller_ExceptionService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#3032\">appTestDebugProjectContainer::getTwig_ExceptionListenerService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#3045\">appTestDebugProjectContainer::getTwig_LoaderService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#3071\">appTestDebugProjectContainer::getTwig_Translation_ExtractorService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#3084\">appTestDebugProjectContainer::getUriSignerService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#3097\">appTestDebugProjectContainer::getValidatorService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#3110\">appTestDebugProjectContainer::getValidator_BuilderService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#3133\">appTestDebugProjectContainer::getValidator_EmailService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#3146\">appTestDebugProjectContainer::getValidator_ExpressionService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#3159\">appTestDebugProjectContainer::getWebProfiler_Controller_ExceptionService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#3172\">appTestDebugProjectContainer::getWebProfiler_Controller_ProfilerService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#3185\">appTestDebugProjectContainer::getWebProfiler_Controller_RouterService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#3202\">appTestDebugProjectContainer::getAssetic_AssetFactoryService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#3223\">appTestDebugProjectContainer::getAssetic_CacheService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#3240\">appTestDebugProjectContainer::getAssetic_ValueSupplier_DefaultService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#3257\">appTestDebugProjectContainer::getControllerNameConverterService<\/a>"],[100,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#3274\">appTestDebugProjectContainer::getDoctrine_Dbal_Logger_Profiling_DefaultService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#3291\">appTestDebugProjectContainer::getRouter_RequestContextService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#3308\">appTestDebugProjectContainer::getSecurity_Access_DecisionManagerService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#3328\">appTestDebugProjectContainer::getSecurity_Authentication_ManagerService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#3349\">appTestDebugProjectContainer::getSecurity_Authentication_TrustResolverService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#3366\">appTestDebugProjectContainer::getSecurity_RoleHierarchyService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#3383\">appTestDebugProjectContainer::getSession_Storage_MetadataBagService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#3400\">appTestDebugProjectContainer::getSwiftmailer_Mailer_Default_Transport_EventdispatcherService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#3417\">appTestDebugProjectContainer::getTemplating_LocatorService<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#3434\">appTestDebugProjectContainer::getTranslator_SelectorService<\/a>"],[75,3,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#3442\">appTestDebugProjectContainer::getParameter<\/a>"],[100,2,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#3456\">appTestDebugProjectContainer::hasParameter<\/a>"],[0,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#3466\">appTestDebugProjectContainer::setParameter<\/a>"],[0,2,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#3474\">appTestDebugProjectContainer::getParameterBag<\/a>"],[100,1,"<a href=\"var\/cache\/test\/appTestDebugProjectContainer.php.html#3487\">appTestDebugProjectContainer::getDefaultParameters<\/a>"],[100,1,"<a href=\"var\/cache\/test\/doctrine\/orm\/Proxies\/__CG__AbdwgJobeetBundleEntityCategory.php.html#47\">Category::__construct<\/a>"],[0,2,"<a href=\"var\/cache\/test\/doctrine\/orm\/Proxies\/__CG__AbdwgJobeetBundleEntityCategory.php.html#64\">Category::__sleep<\/a>"],[0,4,"<a href=\"var\/cache\/test\/doctrine\/orm\/Proxies\/__CG__AbdwgJobeetBundleEntityCategory.php.html#76\">Category::__wakeup<\/a>"],[0,3,"<a href=\"var\/cache\/test\/doctrine\/orm\/Proxies\/__CG__AbdwgJobeetBundleEntityCategory.php.html#79\">Category::anonymous function<\/a>"],[0,2,"<a href=\"var\/cache\/test\/doctrine\/orm\/Proxies\/__CG__AbdwgJobeetBundleEntityCategory.php.html#98\">Category::__clone<\/a>"],[0,2,"<a href=\"var\/cache\/test\/doctrine\/orm\/Proxies\/__CG__AbdwgJobeetBundleEntityCategory.php.html#106\">Category::__load<\/a>"],[0,1,"<a href=\"var\/cache\/test\/doctrine\/orm\/Proxies\/__CG__AbdwgJobeetBundleEntityCategory.php.html#115\">Category::__isInitialized<\/a>"],[0,1,"<a href=\"var\/cache\/test\/doctrine\/orm\/Proxies\/__CG__AbdwgJobeetBundleEntityCategory.php.html#124\">Category::__setInitialized<\/a>"],[0,1,"<a href=\"var\/cache\/test\/doctrine\/orm\/Proxies\/__CG__AbdwgJobeetBundleEntityCategory.php.html#133\">Category::__setInitializer<\/a>"],[0,1,"<a href=\"var\/cache\/test\/doctrine\/orm\/Proxies\/__CG__AbdwgJobeetBundleEntityCategory.php.html#142\">Category::__getInitializer<\/a>"],[0,1,"<a href=\"var\/cache\/test\/doctrine\/orm\/Proxies\/__CG__AbdwgJobeetBundleEntityCategory.php.html#151\">Category::__setCloner<\/a>"],[0,1,"<a href=\"var\/cache\/test\/doctrine\/orm\/Proxies\/__CG__AbdwgJobeetBundleEntityCategory.php.html#160\">Category::__getCloner<\/a>"],[0,1,"<a href=\"var\/cache\/test\/doctrine\/orm\/Proxies\/__CG__AbdwgJobeetBundleEntityCategory.php.html#170\">Category::__getLazyProperties<\/a>"],[0,3,"<a href=\"var\/cache\/test\/doctrine\/orm\/Proxies\/__CG__AbdwgJobeetBundleEntityCategory.php.html#179\">Category::getId<\/a>"],[0,2,"<a href=\"var\/cache\/test\/doctrine\/orm\/Proxies\/__CG__AbdwgJobeetBundleEntityCategory.php.html#194\">Category::setName<\/a>"],[0,2,"<a href=\"var\/cache\/test\/doctrine\/orm\/Proxies\/__CG__AbdwgJobeetBundleEntityCategory.php.html#205\">Category::getName<\/a>"],[0,2,"<a href=\"var\/cache\/test\/doctrine\/orm\/Proxies\/__CG__AbdwgJobeetBundleEntityCategory.php.html#216\">Category::addJob<\/a>"],[0,2,"<a href=\"var\/cache\/test\/doctrine\/orm\/Proxies\/__CG__AbdwgJobeetBundleEntityCategory.php.html#227\">Category::removeJob<\/a>"],[0,2,"<a href=\"var\/cache\/test\/doctrine\/orm\/Proxies\/__CG__AbdwgJobeetBundleEntityCategory.php.html#238\">Category::getJobs<\/a>"],[0,2,"<a href=\"var\/cache\/test\/doctrine\/orm\/Proxies\/__CG__AbdwgJobeetBundleEntityCategory.php.html#249\">Category::addAffiliate<\/a>"],[0,2,"<a href=\"var\/cache\/test\/doctrine\/orm\/Proxies\/__CG__AbdwgJobeetBundleEntityCategory.php.html#260\">Category::removeAffiliate<\/a>"],[0,2,"<a href=\"var\/cache\/test\/doctrine\/orm\/Proxies\/__CG__AbdwgJobeetBundleEntityCategory.php.html#271\">Category::getAffiliates<\/a>"],[0,2,"<a href=\"var\/cache\/test\/doctrine\/orm\/Proxies\/__CG__AbdwgJobeetBundleEntityCategory.php.html#282\">Category::__toString<\/a>"],[0,2,"<a href=\"var\/cache\/test\/doctrine\/orm\/Proxies\/__CG__AbdwgJobeetBundleEntityCategory.php.html#293\">Category::setActiveJobs<\/a>"],[0,2,"<a href=\"var\/cache\/test\/doctrine\/orm\/Proxies\/__CG__AbdwgJobeetBundleEntityCategory.php.html#304\">Category::getActiveJobs<\/a>"],[0,2,"<a href=\"var\/cache\/test\/doctrine\/orm\/Proxies\/__CG__AbdwgJobeetBundleEntityCategory.php.html#315\">Category::getSlug<\/a>"],[0,2,"<a href=\"var\/cache\/test\/doctrine\/orm\/Proxies\/__CG__AbdwgJobeetBundleEntityCategory.php.html#326\">Category::setMoreJobs<\/a>"],[0,2,"<a href=\"var\/cache\/test\/doctrine\/orm\/Proxies\/__CG__AbdwgJobeetBundleEntityCategory.php.html#337\">Category::getMoreJobs<\/a>"],[0,2,"<a href=\"var\/cache\/test\/doctrine\/orm\/Proxies\/__CG__AbdwgJobeetBundleEntityCategory.php.html#348\">Category::setSlug<\/a>"],[0,2,"<a href=\"var\/cache\/test\/doctrine\/orm\/Proxies\/__CG__AbdwgJobeetBundleEntityCategory.php.html#359\">Category::setSlugValue<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>

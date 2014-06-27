@@ -1,0 +1,31 @@
+{# src\Abdwg\JobeetBundle\Resources\views\Job\index.html.twig #}
+{% extends 'AbdwgJobeetBundle::layout.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('bundles/abdwgjobeet/css/jobs.css') }}" type="text/css" media="all" />
+{% endblock %}
+
+{% block content %}
+    <div id="jobs">
+        {% for category in categories %}
+            <div class="category_{{ category.slug }}">
+                <div class="category">
+                    <div class="feed">
+                        <a href="">Feed</a>
+                    </div>
+                    <h1><a href="{{ path('abdwg_jobeet_category', { 'slug': category.slug }) }}">{{ category.name }}</a></h1>
+                </div>
+
+                {{ include ('AbdwgJobeetBundle:Job:list.html.twig', {'jobs': category.activejobs}) }}
+
+                {% if category.morejobs %}
+                    <div class="more_jobs">
+                        and <a href="{{ path('abdwg_jobeet_category', { 'slug': category.slug }) }}">{{ category.morejobs }}</a>
+                        more...
+                    </div>
+                {% endif %}
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

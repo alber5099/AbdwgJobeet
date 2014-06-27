@@ -1,0 +1,4 @@
+abdwg_jobeet:
+    resource: "@AbdwgJobeetBundle/Resources/config/routing.yml"
+    prefix:   /
+

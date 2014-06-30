@@ -17,6 +17,8 @@ class JobRepository extends EntityRepository
         $qb = $this->createQueryBuilder('j')
             ->where('j.expires_at > :date')
             ->setParameter('date', date('Y-m-d H:i:s', time()))
+            ->andWhere('j.is_activated = :activated')
+            ->setParameter('activated', 1)
             ->orderBy('j.expires_at', 'DESC');
 
         if($max) {
@@ -36,6 +38,25 @@ class JobRepository extends EntityRepository
         $query = $qb->getQuery();
 
         return $query->getResult();
+    }
+
+    public function countActiveJobs($category_id = null)
+    {
+        $qb = $this->createQueryBuilder('j')
+            ->select('count(j.id)')
+            ->where('j.expires_at > :date')
+            ->setParameter('date', date('Y-m-d H:i:s', time()))
+            ->andWhere('j.is_activated = :activated')
+            ->setParameter('activated', 1);
+
+        if($category_id) {
+            $qb->andWhere('j.category = :category_id')
+               ->setParameter('category_id', $category_id);
+        }
+
+        $query = $qb->getQuery();
+
+        return $query->getSingleScalarResult();
     }
 
     /**
@@ -65,22 +86,15 @@ class JobRepository extends EntityRepository
         return $job;
     }
 
-    public function countActiveJobs($category_id = null)
+    public function cleanup($days)
     {
-        $qb = $this->createQueryBuilder('j')
-            ->select('count(j.id)')
-            ->where('j.expires_at > :date')
-            ->setParameter('date', date('Y-m-d H:i:s', time()));
+        $query = $this->createQueryBuilder('j')
+            ->delete()
+            ->where('j.is_activated IS NULL')
+            ->andWhere('j.created_at < :created_at')
+            ->setParameter('created_at',  date('Y-m-d', time() - 86400 * $days))
+            ->getQuery();
 
-        if($category_id)
-        {
-            $qb->andWhere('j.category = :category_id')
-                ->setParameter('category_id', $category_id);
-        }
-
-        $query = $qb->getQuery();
-
-        return $query->getSingleScalarResult();
+        return $query->execute();
     }
-
 }

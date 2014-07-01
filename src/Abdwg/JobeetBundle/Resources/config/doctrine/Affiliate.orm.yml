@@ -1,6 +1,7 @@
 # src/Abdwg/JobeetBundle/Resources/config/doctrine/Affiliate.orm.yml
 Abdwg\JobeetBundle\Entity\Affiliate:
     type: entity
+    repositoryClass: Abdwg\JobeetBundle\Entity\AffiliateRepository
     table: affiliate
     id:
         id:
@@ -34,4 +35,4 @@ Abdwg\JobeetBundle\Entity\Affiliate:
                     category_id:
                         referencedColumnName: id
     lifecycleCallbacks:
-        prePersist: [ setCreatedAtValue ]
+        prePersist: [ setCreatedAtValue, setTokenValue ]

@@ -1,0 +1,7 @@
+# src\Abdwg\JobeetBundle\Resources\views\Api\jobs.yaml.twig
+{% for url,job in jobs %}
+    Url: {{ url }}
+    {% for key, value in job %}
+        {{ key }}: {{ value }}
+    {% endfor %}
+{% endfor %}

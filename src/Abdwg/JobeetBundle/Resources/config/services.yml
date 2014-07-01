@@ -19,3 +19,12 @@ services:
             - ~
             - Abdwg\JobeetBundle\Entity\Job
             - 'AbdwgJobeetBundle:JobAdmin'
+
+    abdwg.jobeet.admin.affiliate:
+        class: Abdwg\JobeetBundle\Admin\AffiliateAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: jobeet, label: Affiliates }
+        arguments:
+            - ~
+            - Abdwg\JobeetBundle\Entity\Affiliate
+            - 'AbdwgJobeetBundle:AffiliateAdmin'

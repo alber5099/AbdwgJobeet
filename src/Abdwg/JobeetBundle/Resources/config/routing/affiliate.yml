@@ -1,0 +1,13 @@
+# src\Abdwg\JobeetBundle\Resources\config\routing\affiliate.yml
+abdwg_affiliate_new:
+    pattern:  /new
+    defaults: { _controller: "AbdwgJobeetBundle:Affiliate:new" }
+
+abdwg_affiliate_create:
+    pattern: /create
+    defaults: { _controller: "AbdwgJobeetBundle:Affiliate:create" }
+    requirements: { _method: post }
+
+abdwg_affiliate_wait:
+    pattern: /wait
+    defaults: { _controller: "AbdwgJobeetBundle:Affiliate:wait" }

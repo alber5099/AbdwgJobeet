@@ -2,6 +2,20 @@ parameters:
 #    abdwg_jobeet.example.class: Abdwg\JobeetBundle\Example
 
 services:
-#    abdwg_jobeet.example:
-#        class: %abdwg_jobeet.example.class%
-#        arguments: [@service_id, "plain_value", %parameter%]
+    abdwg.jobeet.admin.category:
+        class: Abdwg\JobeetBundle\Admin\CategoryAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: jobeet, label: Categories }
+        arguments:
+            - ~
+            - Abdwg\JobeetBundle\Entity\Category
+            - 'AbdwgJobeetBundle:CategoryAdmin'
+
+    abdwg.jobeet.admin.job:
+        class: Abdwg\JobeetBundle\Admin\JobAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: jobeet, label: Jobs }
+        arguments:
+            - ~
+            - Abdwg\JobeetBundle\Entity\Job
+            - 'AbdwgJobeetBundle:JobAdmin'

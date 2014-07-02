@@ -33,4 +33,10 @@ class DefaultController extends Controller
                 'error'         => $error,
             ));
     }
+
+    public function changeLanguageAction(Request $request)
+    {
+        $language = $request->get('language');
+        return $this->redirect($this->generateUrl('abdwg_jobeet_homepage', array('_locale' => $language)));
+    }
 }

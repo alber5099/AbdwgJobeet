@@ -46,3 +46,7 @@ abdwg_job_extend:
     pattern:  /{token}/extend
     defaults: { _controller: "AbdwgJobeetBundle:Job:extend" }
     requirements: { _method: post }
+
+abdwg_job_search:
+    pattern: /search
+    defaults: { _controller: "AbdwgJobeetBundle:Job:search" }

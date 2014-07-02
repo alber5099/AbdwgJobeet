@@ -109,7 +109,14 @@ class JobControllerTest extends WebTestCase
 
         $client = static::createClient();
 
-        $crawler = $client->request('GET', '/');
+        $crawler = $client->request('GET', '/zh/');
+        $this->assertEquals('Abdwg\JobeetBundle\Controller\JobController::indexAction', $client->getRequest()->attributes->get('_controller'));
+
+        // If the selected culture is italian, the page requested will not be found
+        $crawler = $client->request('GET', '/it/');
+        $this->assertTrue(404 === $client->getResponse()->getStatusCode());
+
+        $crawler = $client->request('GET', '/en/');
         $this->assertEquals('Abdwg\JobeetBundle\Controller\JobController::indexAction', $client->getRequest()->attributes->get('_controller'));
 
         // expired jobs are not listed
@@ -134,11 +141,11 @@ class JobControllerTest extends WebTestCase
         $this->assertEquals($job->getId(), $client->getRequest()->attributes->get('id'));
 
         // a non-existent job forwards the user to a 404
-        $crawler = $client->request('GET', '/job/foo-inc/milano-italy/0/painter');
+        $crawler = $client->request('GET', '/en/job/foo-inc/milano-italy/0/painter');
         $this->assertTrue(404 === $client->getResponse()->getStatusCode());
 
         // an expired job page forwards the user to a 404
-        $crawler = $client->request('GET', sprintf('/job/sensio-labs/paris-france/%d/web-developer', $this->getExpiredJob()->getId()));
+        $crawler = $client->request('GET', sprintf('/en/job/sensio-labs/paris-france/%d/web-developer', $this->getExpiredJob()->getId()));
         $this->assertTrue(404 === $client->getResponse()->getStatusCode());
     }
 
@@ -147,7 +154,7 @@ class JobControllerTest extends WebTestCase
     {
         $client = static::createClient();
 
-        $crawler = $client->request('GET', '/job/new');
+        $crawler = $client->request('GET', '/en/job/new');
         $this->assertEquals('Abdwg\JobeetBundle\Controller\JobController::newAction', $client->getRequest()->attributes->get('_controller'));
 
         $form = $crawler->selectButton('Preview your job')->form(array(
@@ -178,7 +185,7 @@ class JobControllerTest extends WebTestCase
         $this->assertTrue(0 < $query->getSingleScalarResult());
 
         //错误的Job信息表单做测试
-        $crawler = $client->request('GET', '/job/new');
+        $crawler = $client->request('GET', '/en/job/new');
         $form = $crawler->selectButton('Preview your job')->form(array(
                 'job[company]'      => 'Sensio Labs',
                 'job[position]'     => 'Developer',
@@ -237,7 +244,7 @@ class JobControllerTest extends WebTestCase
     {
         $client = $this->createJob(array('job[position]' => 'FOO3'));
         $crawler = $client->getCrawler();
-        $crawler = $client->request('GET', sprintf('/job/%s/edit', $this->getJobByPosition('FOO3')->getToken()));
+        $crawler = $client->request('GET', sprintf('/en/job/%s/edit', $this->getJobByPosition('FOO3')->getToken()));
         $this->assertTrue(404 === $client->getResponse()->getStatusCode());
     }
 
@@ -262,7 +269,7 @@ class JobControllerTest extends WebTestCase
         $em->flush();
 
         // Go to the preview page and extend the job
-        $crawler = $client->request('GET', sprintf('/job/%s/%s/%s/%s', $job->getCompanySlug(), $job->getLocationSlug(), $job->getToken(), $job->getPositionSlug()));
+        $crawler = $client->request('GET', sprintf('/en/job/%s/%s/%s/%s', $job->getCompanySlug(), $job->getLocationSlug(), $job->getToken(), $job->getPositionSlug()));
         $crawler = $client->getCrawler();
         $form = $crawler->selectButton('Extend')->form();
         $client->submit($form);
@@ -277,7 +284,7 @@ class JobControllerTest extends WebTestCase
     public function createJob($values = array(), $publish = false)
     {
         $client = static::createClient();
-        $crawler = $client->request('GET', '/job/new');
+        $crawler = $client->request('GET', '/en/job/new');
         $form = $crawler->selectButton('Preview your job')->form(array_merge(array(
                     'job[company]'      => 'Sensio Labs',
                     'job[url]'          => 'http://www.sensio.com/',
@@ -314,4 +321,16 @@ class JobControllerTest extends WebTestCase
         return $query->getSingleResult();
     }
 
+    public function testSearch()
+    {
+        $client = static::createClient();
+
+        $crawler = $client->request('GET', '/en/job/search');
+        $this->assertEquals('Abdwg\JobeetBundle\Controller\JobController::searchAction', $client->getRequest()->attributes->get('_controller'));
+
+        $crawler = $client->request('GET', '/en/job/search?query=sens*', array(), array(), array(
+                'X-Requested-With' => 'XMLHttpRequest',
+            ));
+        $this->assertTrue($crawler->filter('tr')->count()== 2);
+    }
 }

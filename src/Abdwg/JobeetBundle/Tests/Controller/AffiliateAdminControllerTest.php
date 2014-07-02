@@ -2,10 +2,10 @@
 /**
  * Created by PhpStorm.
  * User: alber
- * Date: 2014/7/1
- * Time: 下午 6:51
+ * Date: 2014/7/2
+ * Time: 上午 7:00
  */
-// src\Abdwg\JobeetBundle\Tests\Controller\AffiliateControllerTest.php
+// src\Abdwg\JobeetBundle\Tests\Controller\AffiliateAdminControllerTest.php
 namespace Abdwg\JobeetBundle\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
@@ -15,9 +15,8 @@ use Symfony\Component\Console\Input\ArrayInput;
 use Doctrine\Bundle\DoctrineBundle\Command\DropDatabaseDoctrineCommand;
 use Doctrine\Bundle\DoctrineBundle\Command\CreateDatabaseDoctrineCommand;
 use Doctrine\Bundle\DoctrineBundle\Command\Proxy\CreateSchemaDoctrineCommand;
-use Symfony\Component\DomCrawler\Crawler;
 
-class AffiliateControllerTest extends WebTestCase
+class AffiliateAdminControllerTest extends WebTestCase
 {
     private $em;
     private $application;
@@ -74,63 +73,43 @@ class AffiliateControllerTest extends WebTestCase
         $executor->execute($loader->getFixtures());
     }
 
-    public function testAffiliateForm()
+    public function testActivate()
     {
         $client = static::createClient();
-        $crawler = $client->request('GET', '/en/affiliate/new');
 
-        $this->assertEquals('Abdwg\JobeetBundle\Controller\AffiliateController::newAction', $client->getRequest()->attributes->get('_controller'));
+        // Enable the profiler for the next request (it does nothing if the profiler is not available)
+        $client->enableProfiler();
+        $crawler = $client->request('GET', '/login');
 
-        $form = $crawler->selectButton('Submit')->form(array(
-                'affiliate[url]' => 'http://sensio-labs.com/',
-                'affiliate[email]' => 'jobeet@example.com'
+        $form = $crawler->selectButton('login')->form(array(
+                '_username'      => 'admin',
+                '_password'      => 'admin'
             ));
 
-        $client->submit($form);
-        $this->assertEquals('Abdwg\JobeetBundle\Controller\AffiliateController::createAction', $client->getRequest()->attributes->get('_controller'));
-
-        $kernel = static::createKernel();
-        $kernel->boot();
-        $em = $kernel->getContainer()->get('doctrine.orm.entity_manager');
-
-        $query = $em->createQuery('SELECT count(a.email) FROM AbdwgJobeetBundle:Affiliate a WHERE a.email = :email');
-        $query->setParameter('email', 'jobeet@example.com');
-        $this->assertEquals(1, $query->getSingleScalarResult());
-
-        $crawler = $client->request('GET', '/en/affiliate/new');
-        $form = $crawler->selectButton('Submit')->form(array(
-                'affiliate[email]'        => 'not.an.email',
-            ));
         $crawler = $client->submit($form);
+        $crawler = $client->followRedirect();
 
-        // check if we have 1 errors
-        $this->assertTrue($crawler->filter('.error_list')->count() == 1);
-        // check if we have error on affiliate_email field
-        $this->assertTrue($crawler->filter('#affiliate_email')->siblings()->first()->filter('.error_list')->count() == 1);
-    }
+        $this->assertTrue(200 === $client->getResponse()->getStatusCode());
 
-    public function testCreate()
-    {
-        $client = static::createClient();
-        $crawler = $client->request('GET', '/en/affiliate/new');
-        $form = $crawler->selectButton('Submit')->form(array(
-                'affiliate[url]' => 'http://sensio-labs.com/',
-                'affiliate[email]' => 'address@example.com'
-            ));
+        $crawler = $client->request('GET', '/admin/abdwg/jobeet/affiliate/list');
 
-        $client->submit($form);
-        $client->followRedirect();
+        $link = $crawler->filter('.btn.edit_link')->link();
+        $client->click($link);
 
-        $this->assertEquals('Abdwg\JobeetBundle\Controller\AffiliateController::waitAction', $client->getRequest()->attributes->get('_controller'));
+        $mailCollector = $client->getProfile()->getCollector('swiftmailer');
 
-        return $client;
-    }
+        // Check that an e-mail was sent
+        $this->assertEquals(1, $mailCollector->getMessageCount());
 
-    public function testWait()
-    {
-        $client = static::createClient();
-        $crawler = $client->request('GET', '/en/affiliate/wait');
+        $collectedMessages = $mailCollector->getMessages();
+        $message = $collectedMessages[0];
 
-        $this->assertEquals('Abdwg\JobeetBundle\Controller\AffiliateController::waitAction', $client->getRequest()->attributes->get('_controller'));
+        // Asserting e-mail data
+        $this->assertInstanceOf('Swift_Message', $message);
+        $this->assertEquals('Jobeet affiliate token', $message->getSubject());
+        $this->assertRegExp(
+            '/Your secret token is symfony/',
+            $message->getBody()
+        );
     }
 }

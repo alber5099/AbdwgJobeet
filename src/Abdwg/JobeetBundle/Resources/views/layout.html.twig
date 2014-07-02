@@ -4,7 +4,7 @@
 <head>
     <title>
         {% block title %}
-            Jobeet - Your best job board
+            {% trans %} Jobeet - Your best job board {% endtrans %}
         {% endblock %}
     </title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -12,6 +12,8 @@
         <link rel="stylesheet" href="{{ asset('bundles/abdwgjobeet/css/main.css') }}" type="text/css" media="all" />
     {% endblock %}
     {% block javascripts %}
+        <script type="text/javascript" src="{{ asset('bundles/abdwgjobeet/js/jquery-2.1.1.min.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('bundles/abdwgjobeet/js/search.js') }}"></script>
     {% endblock %}
     <link rel="shortcut icon" href="{{ asset('bundles/abdwgjobeet/images/favicon.ico') }}" />
     <link rel="alternate" type="application/atom+xml" title="Latest Jobs" href="{{ url('abdwg_job', {'_format': 'atom'}) }}" />
@@ -22,23 +24,25 @@
         <div class="content">
             <h1><a href="{{ path('abdwg_jobeet_homepage') }}">
                     <img src="{{ asset('bundles/abdwgjobeet/images/logo.jpg') }}" alt="Jobeet Job Board" />
-                </a></h1>
+                </a>
+            </h1>
 
             <div id="sub_header">
                 <div class="post">
-                    <h2>Ask for people</h2>
+                    <h2>{% trans %}Ask for people{% endtrans %}</h2>
                     <div>
-                        <a href="{{ path('abdwg_job_new') }}">Post a Job</a>
+                        <a href="{{ path('abdwg_job_new') }}">{% trans %}Post a Job{% endtrans %}</a>
                     </div>
                 </div>
 
                 <div class="search">
-                    <h2>Ask for a job</h2>
-                    <form action="" method="get">
-                        <input type="text" name="keywords" id="search_keywords" />
+                    <h2>{% trans %}Ask for a job{% endtrans %}</h2>
+                    <form action="{{ path('abdwg_job_search') }}" method="get">
+                        <input type="text" name="query" value="{{ app.request.get('query') }}" id="search_keywords" />
                         <input type="submit" value="search" />
+                        <img id="loader" src="{{ asset('bundles/abdwgjobeet/images/loader.gif') }}" style="vertical-align: middle; display: none" />
                         <div class="help">
-                            Enter some keywords (city, country, position, ...)
+                            {% trans %}Enter some keywords (city, country, position, ...){% endtrans %}
                         </div>
                     </form>
                 </div>
@@ -47,7 +51,7 @@
     </div>
 
     <div id="job_history">
-        Recent viewed jobs:
+        {% trans %}Recent viewed jobs:{% endtrans %}
         <ul>
             {% for job in app.session.get('job_history') %}
                 <li>
@@ -85,11 +89,20 @@
                        </a>
                    </span>
             <ul>
-                <li><a href="">About Jobeet</a></li>
-                <li class="feed"><a href="{{ path('abdwg_job', {'_format': 'atom'}) }}">Full feed</a></li>
-                <li><a href="">Jobeet API</a></li>
-                <li class="last"><a href="{{ path('abdwg_affiliate_new') }}">Become an affiliate</a></li>
+                <li><a href="">{% trans %}About Jobeet{% endtrans %}</a></li>
+                <li class="feed"><a href="{{ path('abdwg_job', {'_format': 'atom'}) }}">{% trans %}Full feed{% endtrans %}</a></li>
+                <li><a href="">{% trans %}Jobeet API{% endtrans %}</a></li>
+                <li class="last"><a href="{{ path('abdwg_affiliate_new') }}">{% trans %}Become an affiliate{% endtrans %}</a></li>
             </ul>
+            <form action="{{ path('abdwg_jobeet_changeLanguage') }}" method="get">
+                <label>{% trans %}Language{% endtrans %}</label>
+                <select name="language">
+                    <option value="en" {% if app.request.get('_locale') == 'en' %}selected="selected"{% endif %}>English</option>
+                    <option value="zh" {% if app.request.get('_locale') == 'zh' %}selected="selected"{% endif %}>中文</option>
+                </select>
+                <input type="submit" value="Ok">
+            </form>
+
         </div>
     </div>
 </div>

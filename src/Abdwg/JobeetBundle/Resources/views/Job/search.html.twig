@@ -1,0 +1,13 @@
+{# src\Abdwg\JobeetBundle\Resources\views\Job\search.html.twig #}
+{% extends 'AbdwgJobeetBundle::layout.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('bundles/abdwgjobeet/css/jobs.css') }}" type="text/css" media="all" />
+{% endblock %}
+
+{% block content %}
+    <div id="jobs">
+        {% include 'AbdwgJobeetBundle:Job:list.html.twig' with {'jobs': jobs} %}
+    </div>
+{% endblock %}

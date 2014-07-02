@@ -21,6 +21,10 @@ class JobController extends Controller
      */
     public function indexAction(Request $request)
     {
+        if($request->get('_route') == 'abdwg_jobeet_nonlocalized') {
+            return $this->redirect($this->generateUrl('abdwg_jobeet_homepage'));
+        }
+
         $em = $this->getDoctrine()->getManager();
 
         $categories = $em->getRepository('AbdwgJobeetBundle:Category')->getWithJobs();
@@ -367,5 +371,31 @@ class JobController extends Controller
         return $this->createFormBuilder(array('token' => $token))
             ->add('token', 'hidden')
             ->getForm();
+    }
+
+    public function searchAction(Request $request)
+    {
+        $em = $this->getDoctrine()->getManager();
+        $query = $request->get('query');
+
+        if(!$query) {
+            if(!$request->isXmlHttpRequest()) {
+                return $this->redirect($this->generateUrl('abdwg_job'));
+            }else {
+                return new Response('No results.');
+            }
+        }
+
+        $jobs = $em->getRepository('AbdwgJobeetBundle:Job')->getForLuceneQuery($query);
+
+        if($request->isXmlHttpRequest()) {
+            if('*' == $query || !$jobs || $query == '') {
+                return new Response('No results.');
+            }
+
+            return $this->render('AbdwgJobeetBundle:Job:list.html.twig', array('jobs' => $jobs));
+        }
+
+        return $this->render('AbdwgJobeetBundle:Job:search.html.twig', array('jobs' => $jobs));
     }
 }

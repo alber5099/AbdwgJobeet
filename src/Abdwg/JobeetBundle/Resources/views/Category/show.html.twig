@@ -13,7 +13,7 @@
 {% block content %}
     <div class="category">
         <div class="feed">
-            <a href="{{ path('AbdwgJobeetBundle_category', { 'slug': category.slug, '_format': 'atom' }) }}">Feed</a>
+            <a href="{{ path('abdwg_jobeet_category', { 'slug': category.slug, '_format': 'atom' }) }}">Feed</a>
         </div>
         <h1>{{ category.name }}</h1>
     </div>
@@ -50,7 +50,7 @@
 
     <div class="pagination_desc">
         {% transchoice total_jobs with {'%count%': '<strong>' ~ total_jobs ~ '</strong>'} %}
-        {0} No job in this category|{1} One job in this category|]1,Inf] %count% jobs in this category
+        {0} No job in this category|{1} 1 jobs in this category|]1,Inf] %count% jobs in this category
         {% endtranschoice %}
 
         {% if last_page > 1 %}

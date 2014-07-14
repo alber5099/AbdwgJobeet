@@ -24,7 +24,7 @@
                 {% if job.isExpired %}
                     {% trans %}Expired{% endtrans %}
                 {% else %}
-                    {% trans with { '%count%': '<strong>' ~ job.getDaysBeforeExpires '</strong>' }  %} Expires in %count% days {% endtrans %}
+                    {% trans with { '%count%': '<strong>' ~ job.getDaysBeforeExpires ~ '</strong>' }  %} Expires in %count% days {% endtrans %}
                 {% endif %}
 
                 {% if job.expiresSoon %}

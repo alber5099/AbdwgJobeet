@@ -15,6 +15,7 @@ use Symfony\Component\Console\Input\ArrayInput;
 use Doctrine\Bundle\DoctrineBundle\Command\DropDatabaseDoctrineCommand;
 use Doctrine\Bundle\DoctrineBundle\Command\CreateDatabaseDoctrineCommand;
 use Doctrine\Bundle\DoctrineBundle\Command\Proxy\CreateSchemaDoctrineCommand;
+use Abdwg\JobeetBundle\Entity\Job;
 
 class JobRepositoryTest extends WebTestCase
 {

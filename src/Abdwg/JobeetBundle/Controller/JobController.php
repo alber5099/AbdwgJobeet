@@ -379,16 +379,16 @@ class JobController extends Controller
         $query = $request->get('query');
 
         if(!$query) {
-            if(!$request->isXmlHttpRequest()) {
+            if (!$request->isXmlHttpRequest()) {
                 return $this->redirect($this->generateUrl('abdwg_job'));
-            }else {
+            } else {
                 return new Response('No results.');
             }
         }
 
         $jobs = $em->getRepository('AbdwgJobeetBundle:Job')->getForLuceneQuery($query);
 
-        if($request->isXmlHttpRequest()) {
+        if ($request->isXmlHttpRequest())  {
             if('*' == $query || !$jobs || $query == '') {
                 return new Response('No results.');
             }

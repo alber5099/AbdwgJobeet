@@ -31,7 +31,7 @@ class LoadJobData extends AbstractFixture implements OrderedFixtureInterface
         $job_sensio_labs->setIsActivated(true);
         $job_sensio_labs->setToken('job_sensio_labs');
         $job_sensio_labs->setEmail('job@example.com');
-        $job_sensio_labs->setExpiresAt(new \DateTime('2014-6-25'));
+        $job_sensio_labs->setExpiresAt(new \DateTime('+30 days'));
 
         $job_extreme_sensio = new Job();
         $job_extreme_sensio->setCategory($em->merge($this->getReference('category-design')));
@@ -47,7 +47,7 @@ class LoadJobData extends AbstractFixture implements OrderedFixtureInterface
         $job_extreme_sensio->setIsActivated(true);
         $job_extreme_sensio->setToken('job_extreme_sensio');
         $job_extreme_sensio->setEmail('job@example.com');
-        $job_extreme_sensio->setExpiresAt(new \DateTime('2014-6-24'));
+        $job_extreme_sensio->setExpiresAt(new \DateTime('+30 days'));
 
         $job_expired = new Job();
         $job_expired->setCategory($em->merge($this->getReference('category-programming')));
@@ -63,7 +63,7 @@ class LoadJobData extends AbstractFixture implements OrderedFixtureInterface
         $job_expired->setIsActivated(true);
         $job_expired->setToken('job_expired');
         $job_expired->setEmail('job@example.com');
-        $job_expired->setCreatedAt(new \DateTime('2014-6-01'));
+        $job_expired->setCreatedAt(new \DateTime('2013-6-01'));
 
         $em->persist($job_sensio_labs);
         $em->persist($job_extreme_sensio);

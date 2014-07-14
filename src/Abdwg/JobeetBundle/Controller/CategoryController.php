@@ -52,7 +52,7 @@ class CategoryController extends Controller
                 'current_page' => $page,
                 'next_page' => $next_page,
                 'total_jobs' => $total_jobs,
-                'feedId' => sha1($this->get('router')->generate('AbdwgJobeetBundle_category', array('slug' => $category->getSlug(), 'format' => 'atom'), true)),
+                'feedId' => sha1($this->get('router')->generate('abdwg_jobeet_category', array('slug' => $category->getSlug(), 'format' => 'atom'), true)),
                 'lastUpdated' => $lastUpdated
             ));
     }

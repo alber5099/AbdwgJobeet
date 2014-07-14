@@ -100,6 +100,9 @@ class JobControllerTest extends WebTestCase
         return $query->getSingleResult();
     }
 
+    /**
+     * @group ignore
+     */
     public function testIndex()
     {
         // get the custom parameters from app config.yml
@@ -149,7 +152,9 @@ class JobControllerTest extends WebTestCase
         $this->assertTrue(404 === $client->getResponse()->getStatusCode());
     }
 
-
+    /**
+     * @group ignore
+     */
     public function testJobForm()
     {
         $client = static::createClient();
@@ -208,6 +213,9 @@ class JobControllerTest extends WebTestCase
 
     }
 
+    /**
+     * @group ignore
+     */
     public function testPublishJob()
     {
         $client = $this->createJob(array('job[position]' => 'FOO1'));
@@ -224,6 +232,9 @@ class JobControllerTest extends WebTestCase
         $this->assertTrue(0 < $query->getSingleScalarResult());
     }
 
+    /**
+     * @group ignore
+     */
     public function testDeleteJob()
     {
         $client = $this->createJob(array('job[position]' => 'FOO2'));
@@ -240,14 +251,20 @@ class JobControllerTest extends WebTestCase
         $this->assertTrue(0 == $query->getSingleScalarResult());
     }
 
+    /**
+     * @group ignore
+     */
     public function testEditJob()
     {
-        $client = $this->createJob(array('job[position]' => 'FOO3'));
+        $client = $this->createJob(array('job[position]' => 'FOO3'), true);
         $crawler = $client->getCrawler();
         $crawler = $client->request('GET', sprintf('/en/job/%s/edit', $this->getJobByPosition('FOO3')->getToken()));
         $this->assertTrue(404 === $client->getResponse()->getStatusCode());
     }
 
+    /**
+     * @group ignore
+     */
     public function testExtendJob()
     {
         // A job validity cannot be extended before the job expires soon
